@@ -1,0 +1,10 @@
+{
+  "name": "vue-lsmade",
+  "version": "1.0.0",
+  "description": "easy page ui for nodejs",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": "https://github.com/yueyanglouji/lsmade.git",
+  "author": "lixiaobao",
+  "license": "MIT"
+}

@@ -1,0 +1,8 @@
+body {
+	-webkit-text-size-adjust:none;
+}
+
+.container {
+    max-width: 1187px;
+    width: auto;
+}

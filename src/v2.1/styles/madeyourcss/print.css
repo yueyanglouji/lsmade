@@ -1,0 +1,8 @@
+@import url(../cssframework/jqueryUI/css/jquery.ui.all.css);
+
+@import url(../cssframework/bootstrap/css/bootstrap.css);
+@import url(../cssframework/bootstrap/css/bootstrap-theme.css);
+@import url(../cssframework/ls/lsmade.min.css);
+@import url(../cssframework/ls/lsmade-IA.min.css);
+
+@import url(global.css);

@@ -1,0 +1,126 @@
+body {
+	-webkit-text-size-adjust:none;
+	font-family:helvetica;
+}
+
+.wrapper {
+	position:absolute; z-index:1;
+	top:1px; bottom:1px; left:0;
+	width:100%;
+	overflow:auto;
+}
+
+.scroller {
+	position:absolute; z-index:1;
+/*	-webkit-touch-callout:none;*/
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	width:100%;
+	padding:0;
+}
+
+.button-input-ia{
+	background-color: #FFFFFF !important;
+	background-image:none;
+    border: 1px solid #CCCCCC;
+    padding-left:0 !important;
+    width:70px;
+}
+
+.scroller-ls-ia {
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+	overflow-x:hidden;
+}
+
+em{
+    color: #CC0000;
+    font-style: italic;
+}
+
+._ls_lsautopagea {
+    margin:3px 0 5px 0;
+    display: inline-block;
+    min-width: 20px;
+    border: solid 1px #3A87AD;
+    background-color: #E5ECF9;
+    text-align: center;
+    text-decoration:none!important;
+}
+
+._ls_lsautopagespc {
+	margin:3px 0 5px 0;
+    display: inline-block;
+    min-width: 20px;
+    border: 1px solid transparent;
+	text-align: center;
+}
+
+._ls_lsautopagemore{
+	margin:3px 0 5px 0;
+    display: inline-block;
+    min-width: 20px;
+    border: 1px solid transparent;
+	text-align: center;
+}
+/* åüçıâÊñ  */
+.bs_bannerleft {
+    background-image: url("images/over.JPG");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.search_background{
+	background:#E2EEFA;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #52A7E8;
+	margin-right: 5px;
+}
+
+.search_background_auth_master{
+	background:#E2EEFA;
+	text-align: center;
+	vertical-align: middle;
+	border-bottom: 1px solid #52A7E8;
+	border-top: 1px solid #52A7E8;
+	margin-right: 5px;
+}
+
+.nor_background{
+	background:#E2EEFA;
+	vertical-align: middle;
+	border: 1px solid #52A7E8;
+}
+
+.textinput {
+	background: url("images/input.jpg") repeat scroll 0 0 transparent;
+    border-color: #A2B3BD;
+    border-style: solid;
+    border-width: 1px;
+    color: #336699;
+    height: 50px;
+    line-height: 22px;
+}
+
+.butt {
+    background: url("images/input.jpg") repeat scroll 0 0 transparent;
+    border: 1px solid #83B1F2;
+    font-size: 12px;
+    height: 26px;
+    line-height: 22px;
+    border-radius: 0;
+}
+
+.search_page_title{
+	text-shadow: 1px 1px 2px #000000 !important;
+	color: #FFFFFF;
+}
+
+#popup_overlay{
+	height:100%!important;
+}
+
+hr{
+	margin: 0 0 10px;
+}

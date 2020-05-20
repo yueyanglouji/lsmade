@@ -1,0 +1,329 @@
+@CHARSET "UTF-8";
+.ls-cleartext-a{
+    border-radius: 1em 1em 1em 1em;
+    color: #222222;
+    cursor: pointer;
+    display: block;
+    height: 18px;
+    margin: -8px 5px 0.5em;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FFFFFF;
+    top: 50%;
+    width: 18px
+}
+
+.ls-cleartext-a span {
+	color: #222222;
+	font-weight: 700;
+	text-shadow: 0 1px 0 #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	cursor: pointer;
+	text-align: center;
+	border-color: rgba(255, 255, 255, 0.3);
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	display: block;
+	font-size: 16px;
+	min-width: 0.75em;
+	padding: 0.6em 20px;
+	position: relative;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	border-radius: inherit;
+	font-size: 16px;
+	padding: 0.6em 20px;
+	font-size: 16px;
+	padding: 0.6em 20px;
+	padding: 0;
+}
+
+.ls-cleartext-a span.ls-ui-icon {
+    float: left;
+    margin: -1px 1px 2px 0;
+    display: block;
+    z-index: 0;
+    height: 18px;
+    width: 18px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    border-radius: 9px 9px 9px 9px;
+}
+
+.ls-cleartext-a .icon-remove {
+    background-position: -310px 1px;
+}
+
+.ls-cleartext-a .icon-plane {
+    background-position: -167px -120px;
+}
+
+body{
+	font-size: 12px;
+	line-height: 18px;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    font-size: 12px;
+    height: 28px;
+    padding: 0px 4px;
+    margin: 0;
+    line-height: 26px;
+    -webkit-box-sizing: border-box!important;
+    -moz-box-sizing: border-box!important;
+        box-sizing: border-box!important;
+}
+
+textarea{
+	padding: 6px 4px;
+}
+
+
+.form-search .input-append .search-query {
+    padding-left: 6px;
+}
+
+span.uneditable-input{
+	line-height: 28px;
+}
+ 
+label, input, button, select, textarea {
+    font-size: 12px;
+}
+
+.help-block{
+	height: 25px;
+	line-height: 25px;
+}
+
+.btn{
+	font-size: 12px;
+	padding: 3px 12px;
+}
+
+input.btn {
+    padding: 5.5px 12px;
+}
+
+.btn-large {
+    border-radius: 6px;
+    font-size: 17.5px;
+    padding: 11px 19px;
+}
+
+.btn-mini {
+    border-radius: 3px;
+    font-size: 10.5px;
+    padding: 0 6px;
+}
+
+textarea {
+    height: auto;
+}
+
+select{
+	padding-top: 4px;
+}
+
+.radio.inline, .checkbox.inline {
+    margin-bottom: 4px;
+    padding-top: 4px;
+}
+
+pre {
+	font-size: 12px;
+	line-height: 18px;
+}
+	
+li {
+    line-height: 18px;
+}
+
+input[class*="span"], select[class*="span"], textarea[class*="span"], button[class*="span"] {
+    -moz-box-sizing: border-box !important;
+    min-height: 25px !important;
+}
+
+.form-horizontal .control-group {
+    margin-bottom: 5px;
+}
+
+.input-append .add-on, .input-prepend .add-on {
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    min-width: 16px;
+    padding: 2px 5px;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 4px;
+}
+
+.table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
+	padding: 2px 4px!important;
+}
+
+.auiPortlet {
+    background: url("images/common/portlet_x.gif?") repeat-x scroll center bottom transparent;
+}
+
+.auiPortletHead {
+    background: url("images/common/portlet_x.gif") repeat-x scroll left -189px transparent;
+    height: 45px;
+    margin-left: -15px;
+    padding-left: 15px;
+}
+
+.auiPortletHead .inner {
+    background: url("images/common/portlet_x.gif?20121011") no-repeat scroll left 0 transparent;
+    height: 45px;
+    margin-left: -15px;
+    padding-left: 15px;
+}
+
+
+.auiPortletTitle {
+    background: url("images/common/portlet_x.gif?20121011") no-repeat scroll left -144px transparent;
+    float: left;
+    padding: 13px 0 0 30px;
+    white-space: nowrap;
+    margin-left: -15px;
+}
+
+
+.auiPortletTool {
+    background: url("images/common/portlet_x.gif?20121011") no-repeat scroll right -50px transparent;
+    height: 45px;
+    min-width: 25px;
+    padding: 13px 10px 0 0;
+    right: 0;
+    top: 0;
+    margin-right: -15px;
+}
+
+.auiPortletSetting{
+	text-align: right;
+}
+
+.auiPortletBody {
+    background: url("images/common/portlet_l.gif") repeat-y scroll left 0 #FFFFFF;
+    margin-left: -15px;
+    padding-left: 15px;
+}
+
+.auiPortletBody .inner {
+    background: url("images/common/portlet_r.gif") repeat-y scroll right 0 transparent;
+    padding: 4px 15px 0 0;
+    margin-right: -15px;
+}
+
+.auiPortletFoot {
+    background: url("images/common/portlet_x.gif?20121011") no-repeat scroll left -102px transparent;
+    margin-top: 0px;
+    margin-left: -15px;
+    padding-left: 15px;
+}
+
+.auiPortletFoot .inner {
+    background: url("images/common/portlet_x.gif?20121011") no-repeat scroll right -124px transparent;
+    height: 20px;
+    margin-right: -15px;
+    padding-right: 15px;
+}
+
+.ls-fluidtable tbody tr th,.ls-fluidtable tbody tr td{
+	padding: 0px 5px !important;
+	vertical-align: middle;
+}
+
+.required {
+    background: url("images/common/icon_required.gif") no-repeat scroll right center transparent;
+}
+
+table .required {
+	background-image: url("images/common/icon_required.gif")!important;
+	background-repeat: no-repeat!important;
+	background-position: right center!important;
+}
+
+.ls-fluidtable td{
+	border-top: none;
+}
+
+.btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover {
+    font-size: 12px;
+}
+
+.dropdown-menu > li > a {
+    line-height: 18px;
+    padding: 2px 20px;
+}
+
+.dropdown-menu .divider {
+    margin: 5px 1px;
+}
+
+.navbar .brand {
+    font-size: 18px;
+    padding: 6px 20px;
+}
+
+.navbar-inner {
+    min-height: 30px;
+}
+
+.navbar .nav > li > a {
+    padding: 6px 15px;
+}
+
+.navbar .divider-vertical {
+    height: 30px;
+    margin: 0 5px;
+}
+
+.navbar-form input, .navbar-form select, .navbar-form .radio, .navbar-form .checkbox {
+    margin-top: 1px;
+}
+
+.navbar .btn, .navbar .btn-group {
+    margin-top: 1px;
+}
+
+.navbar-search {
+    margin-top: 1px;
+}	
+
+
+.pagination ul > li:first-child > a, .pagination ul > li:first-child > span {
+    border-bottom-left-radius: 4px;
+    border-left-width: 1px;
+    border-top-left-radius: 4px;
+}
+.pagination ul > li > a, .pagination ul > li > span {
+    line-height: 18px;
+    padding: 2px 8px;
+}
+
+.pager li > a, .pager li > span {
+    padding: 4px 10px;
+}
+
+
+.error, .alert, .notice, .success, .info, .warning {
+    margin-bottom: 0.5em;
+    padding: 0.4em 0.8em;
+}
+
+img {
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+}
+
+html {
+    -ms-touch-action:pan-y;
+    -ms-content-zooming: none;
+}

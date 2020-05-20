@@ -1,0 +1,3600 @@
+@CHARSET "UTF-8";
+/* --------------------------------------------------------------
+
+   grid.css
+   * Sets up an easy-to-use grid of 24 columns.
+
+   By default, the grid is 950px wide, with 24 columns
+   spanning 30px, and a 10px margin between columns.
+
+   If you need fewer or more columns, namespaces or semantic
+   element names, use the compressor script (lib/compress.rb)
+
+-------------------------------------------------------------- */
+
+[class*=" vspan"], [class^="vspan"] {
+    -webkit-box-sizing: content-box!important;
+    -moz-box-sizing: content-box!important;
+        box-sizing: content-box!important;
+}
+
+[class*=" span"], [class^="span"] {
+    -webkit-box-sizing: content-box!important;
+    -moz-box-sizing: content-box!important;
+        box-sizing: content-box!important;
+}
+
+.container {
+  width:950px;
+  margin: 0 auto!important;
+  padding: 0;
+}
+
+*, *:before, *:after {
+
+}
+
+.form-control:focus{
+	border-color: #666666;
+}
+
+.showgrid {
+  height: 100%;
+}
+
+li ul, li ol {
+    margin: 0 0 10px 25px;
+    padding: 0;
+}
+
+html,html>body{
+	min-height: 100%;
+}
+
+input[type="text"], input[type="password"], input[type="url"], input[type="email"], input.text, input.title, textarea, select {
+    margin: 0 0 0 0;
+}
+
+tbody tr:nth-child(2n) td, tbody tr.even td {
+    background: none repeat scroll 0 0 transparent;
+}
+
+table.table-striped tbody tr:nth-child(2n) td, table.table-striped tbody tr.even td {
+    background: none repeat scroll 0 0 #E5ECF9;
+}
+
+table.ls-fluidtable{
+	border-collapse:separate;
+	border-spacing : 2px;
+	border-top-left-radius: 0px; 
+}
+
+.error, .alert, .notice, .success, .info, .warning {
+    border: 0 solid #DDDDDD;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    -webkit-box-sizing: border-box!important;
+    -moz-box-sizing: border-box!important;
+        box-sizing: border-box!important;
+}
+
+form {
+    margin: 0 0 0 0;
+}
+
+input[class*="span"],select[class*="span"],textarea[class*="span"],button[class*="span"]{
+-webkit-box-sizing: border-box!important;
+   -moz-box-sizing: border-box!important;
+        box-sizing: border-box!important;
+}
+
+input[type="button"].span-1 {width: 30px;}
+
+input[type="button"].span-2 {width: 70px;}
+input[type="button"].span-3 {width: 110px;}
+input[type="button"].span-4 {width: 150px;}
+input[type="button"].span-5 {width: 190px;}
+input[type="button"].span-6 {width: 230px;}
+input[type="button"].span-7 {width: 270px;}
+input[type="button"].span-8 {width: 310px;}
+input[type="button"].span-9 {width: 350px;}
+input[type="button"].span-10 {width: 390px;}
+input[type="button"].span-11 {width: 430px;}
+input[type="button"].span-12 {width: 470px;}
+input[type="button"].span-13 {width: 510px;}
+input[type="button"].span-14 {width: 550px;}
+input[type="button"].span-15 {width: 590px;}
+input[type="button"].span-16 {width: 630px;}
+input[type="button"].span-17 {width: 670px;}
+input[type="button"].span-18 {width: 710px;}
+input[type="button"].span-19 {width: 750px;}
+input[type="button"].span-20 {width: 790px;}
+input[type="button"].span-21 {width: 830px;}
+input[type="button"].span-22 {width: 870px;}
+input[type="button"].span-23 {width: 910px;}
+input[type="button"].span-24 {width:950px; margin-right:0;}
+
+.vspan-1 {height: 30px;}
+.vspan-2 {height: 70px;}
+.vspan-3 {height: 110px;}
+.vspan-4 {height: 150px;}
+.vspan-5 {height: 190px;}
+.vspan-6 {height: 230px;}
+.vspan-7 {height: 270px;}
+.vspan-8 {height: 310px;}
+.vspan-9 {height: 350px;}
+.vspan-10 {height: 390px;}
+.vspan-11 {height: 430px;}
+.vspan-12 {height: 470px;}
+.vspan-13 {height: 510px;}
+.vspan-14 {height: 550px;}
+.vspan-15 {height: 590px;}
+.vspan-16 {height: 630px;}
+.vspan-17 {height: 670px;}
+.vspan-18 {height: 710px;}
+.vspan-19 {height: 750px;}
+.vspan-20 {height: 790px;}
+.vspan-21 {height: 830px;}
+.vspan-22 {height: 870px;}
+.vspan-23 {height: 910px;}
+.vspan-24 {height: 950px;}
+
+.vappend-1 { padding-bottom: 40px;}
+.vappend-2 { padding-bottom: 80px;}
+.vappend-3 { padding-bottom: 120px;}
+.vappend-4 { padding-bottom: 160px;}
+.vappend-5 { padding-bottom: 200px;}
+.vappend-6 { padding-bottom: 240px;}
+.vappend-7 { padding-bottom: 280px;}
+.vappend-8 { padding-bottom: 320px;}
+.vappend-9 { padding-bottom: 360px;}
+.vappend-10 { padding-bottom: 400px;}
+.vappend-11 { padding-bottom: 440px;}
+.vappend-12 { padding-bottom: 480px;}
+.vappend-13 { padding-bottom: 520px;}
+.vappend-14 { padding-bottom: 560px;}
+.vappend-15 { padding-bottom: 600px;}
+.vappend-16 { padding-bottom: 640px;}
+.vappend-17 { padding-bottom: 680px;}
+.vappend-18 { padding-bottom: 720px;}
+.vappend-19 { padding-bottom: 760px;}
+.vappend-20 { padding-bottom: 800px;}
+.vappend-21 { padding-bottom: 840px;}
+.vappend-22 { padding-bottom: 880px;}
+.vappend-23 { padding-bottom: 920px;}
+.vappend-24 { padding-bottom: 960px;}
+
+.vprepend-1 { padding-top: 40px;}
+.vprepend-2 { padding-top: 80px;}
+.vprepend-3 { padding-top: 120px;}
+.vprepend-4 { padding-top: 160px;}
+.vprepend-5 { padding-top: 200px;}
+.vprepend-6 { padding-top: 240px;}
+.vprepend-7 { padding-top: 280px;}
+.vprepend-8 { padding-top: 320px;}
+.vprepend-9 { padding-top: 360px;}
+.vprepend-10 { padding-top: 400px;}
+.vprepend-11 { padding-top: 440px;}
+.vprepend-12 { padding-top: 480px;}
+.vprepend-13 { padding-top: 520px;}
+.vprepend-14 { padding-top: 560px;}
+.vprepend-15 { padding-top: 600px;}
+.vprepend-16 { padding-top: 640px;}
+.vprepend-17 { padding-top: 680px;}
+.vprepend-18 { padding-top: 720px;}
+.vprepend-19 { padding-top: 760px;}
+.vprepend-20 { padding-top: 800px;}
+.vprepend-21 { padding-top: 840px;}
+.vprepend-22 { padding-top: 880px;}
+.vprepend-23 { padding-top: 920px;}
+.vprepend-24 { padding-top: 960px;}
+
+@media (min-width: 1187px) {
+
+/* A container should group all your columns. */
+.container {
+  width:1187px;
+  margin: 0 auto;
+}
+
+/* Use this class on any .span / container to see the grid. */
+.showgrid {
+  background: url(src/grid1200.png);
+}
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {
+  float: left;
+  margin-right: 13px;
+}
+
+/* The last column in a row needs this class. */
+.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
+.span-1 {width: 37px;}
+
+.span-2 {width: 87px;}
+.span-3 {width: 137px;}
+.span-4 {width: 187px;}
+.span-5 {width: 237px;}
+.span-6 {width: 287px;}
+.span-7 {width: 337px;}
+.span-8 {width: 387px;}
+.span-9 {width: 437px;}
+.span-10 {width: 487px;}
+.span-11 {width: 537px;}
+.span-12 {width: 587px;}
+.span-13 {width: 637px;}
+.span-14 {width: 687px;}
+.span-15 {width: 737px;}
+.span-16 {width: 787px;}
+.span-17 {width: 837px;}
+.span-18 {width: 887px;}
+.span-19 {width: 937px;}
+.span-20 {width: 987px;}
+.span-21 {width: 1037px;}
+.span-22 {width: 1087px;}
+.span-23 {width: 1137px;}
+.span-24 {width:1187px; margin-right:0;}
+
+.vspan-1 {height: 37px;}
+.vspan-2 {height: 87px;}
+.vspan-3 {height: 137px;}
+.vspan-4 {height: 187px;}
+.vspan-5 {height: 237px;}
+.vspan-6 {height: 287px;}
+.vspan-7 {height: 337px;}
+.vspan-8 {height: 387px;}
+.vspan-9 {height: 437px;}
+.vspan-10 {height: 487px;}
+.vspan-11 {height: 537px;}
+.vspan-12 {height: 587px;}
+.vspan-13 {height: 637px;}
+.vspan-14 {height: 687px;}
+.vspan-15 {height: 737px;}
+.vspan-16 {height: 787px;}
+.vspan-17 {height: 837px;}
+.vspan-18 {height: 887px;}
+.vspan-19 {height: 937px;}
+.vspan-20 {height: 987px;}
+.vspan-21 {height: 1037px;}
+.vspan-22 {height: 1087px;}
+.vspan-23 {height: 1137px;}
+.vspan-24 {height:1187px; margin-bottom:0;}
+
+/* Use these classes to set the width of an input. */
+input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+input.span-1, textarea.span-1 { width: 25px; }
+input.span-2, textarea.span-2 { width: 75px; }
+input.span-3, textarea.span-3 { width: 125px; }
+input.span-4, textarea.span-4 { width: 175px; }
+input.span-5, textarea.span-5 { width: 225px; }
+input.span-6, textarea.span-6 { width: 275px; }
+input.span-7, textarea.span-7 { width: 325px; }
+input.span-8, textarea.span-8 { width: 375px; }
+input.span-9, textarea.span-9 { width: 425px; }
+input.span-10, textarea.span-10 { width: 475px; }
+input.span-11, textarea.span-11 { width: 525px; }
+input.span-12, textarea.span-12 { width: 575px; }
+input.span-13, textarea.span-13 { width: 625px; }
+input.span-14, textarea.span-14 { width: 675px; }
+input.span-15, textarea.span-15 { width: 725px; }
+input.span-16, textarea.span-16 { width: 775px; }
+input.span-17, textarea.span-17 { width: 825px; }
+input.span-18, textarea.span-18 { width: 875px; }
+input.span-19, textarea.span-19 { width: 925px; }
+input.span-20, textarea.span-20 { width: 975px; }
+input.span-21, textarea.span-21 { width: 1025px; }
+input.span-22, textarea.span-22 { width: 1075px; }
+input.span-23, textarea.span-23 { width: 1125px; }
+input.span-24, textarea.span-24 { width: 1175px; }
+
+input[type="button"].span-1 {width: 37px;}
+input[type="button"].span-2 {width: 87px;}
+input[type="button"].span-3 {width: 137px;}
+input[type="button"].span-4 {width: 187px;}
+input[type="button"].span-5 {width: 237px;}
+input[type="button"].span-6 {width: 287px;}
+input[type="button"].span-7 {width: 337px;}
+input[type="button"].span-8 {width: 387px;}
+input[type="button"].span-9 {width: 437px;}
+input[type="button"].span-10 {width: 487px;}
+input[type="button"].span-11 {width: 537px;}
+input[type="button"].span-12 {width: 587px;}
+input[type="button"].span-13 {width: 637px;}
+input[type="button"].span-14 {width: 687px;}
+input[type="button"].span-15 {width: 737px;}
+input[type="button"].span-16 {width: 787px;}
+input[type="button"].span-17 {width: 837px;}
+input[type="button"].span-18 {width: 887px;}
+input[type="button"].span-19 {width: 937px;}
+input[type="button"].span-20 {width: 987px;}
+input[type="button"].span-21 {width: 1037px;}
+input[type="button"].span-22 {width: 1087px;}
+input[type="button"].span-23 {width: 1137px;}
+input[type="button"].span-24 {width:1187px; margin-right:0;}
+
+/* Add these to a column to append empty cols. */
+
+.append-1 { padding-right: 50px;}
+.append-2 { padding-right: 100px;}
+.append-3 { padding-right: 150px;}
+.append-4 { padding-right: 200px;}
+.append-5 { padding-right: 250px;}
+.append-6 { padding-right: 300px;}
+.append-7 { padding-right: 350px;}
+.append-8 { padding-right: 400px;}
+.append-9 { padding-right: 450px;}
+.append-10 { padding-right: 500px;}
+.append-11 { padding-right: 550px;}
+.append-12 { padding-right: 600px;}
+.append-13 { padding-right: 650px;}
+.append-14 { padding-right: 700px;}
+.append-15 { padding-right: 750px;}
+.append-16 { padding-right: 800px;}
+.append-17 { padding-right: 850px;}
+.append-18 { padding-right: 900px;}
+.append-19 { padding-right: 950px;}
+.append-20 { padding-right: 1000px;}
+.append-21 { padding-right: 1050px;}
+.append-22 { padding-right: 1100px;}
+.append-23 { padding-right: 1150px;}
+
+.vappend-1 { padding-bottom: 50px;}
+.vappend-2 { padding-bottom: 100px;}
+.vappend-3 { padding-bottom: 150px;}
+.vappend-4 { padding-bottom: 200px;}
+.vappend-5 { padding-bottom: 250px;}
+.vappend-6 { padding-bottom: 300px;}
+.vappend-7 { padding-bottom: 350px;}
+.vappend-8 { padding-bottom: 400px;}
+.vappend-9 { padding-bottom: 450px;}
+.vappend-10 { padding-bottom: 500px;}
+.vappend-11 { padding-bottom: 550px;}
+.vappend-12 { padding-bottom: 600px;}
+.vappend-13 { padding-bottom: 650px;}
+.vappend-14 { padding-bottom: 700px;}
+.vappend-15 { padding-bottom: 750px;}
+.vappend-16 { padding-bottom: 800px;}
+.vappend-17 { padding-bottom: 850px;}
+.vappend-18 { padding-bottom: 900px;}
+.vappend-19 { padding-bottom: 950px;}
+.vappend-20 { padding-bottom: 1000px;}
+.vappend-21 { padding-bottom: 1050px;}
+.vappend-22 { padding-bottom: 1100px;}
+.vappend-23 { padding-bottom: 1150px;}
+.vappend-24 { padding-bottom: 1200px;}
+
+/* Add these to a column to prepend empty cols. */
+
+.prepend-1 { padding-left: 50px;}
+.prepend-2 { padding-left: 100px;}
+.prepend-3 { padding-left: 150px;}
+.prepend-4 { padding-left: 200px;}
+.prepend-5 { padding-left: 250px;}
+.prepend-6 { padding-left: 300px;}
+.prepend-7 { padding-left: 350px;}
+.prepend-8 { padding-left: 400px;}
+.prepend-9 { padding-left: 450px;}
+.prepend-10 { padding-left: 500px;}
+.prepend-11 { padding-left: 550px;}
+.prepend-12 { padding-left: 600px;}
+.prepend-13 { padding-left: 650px;}
+.prepend-14 { padding-left: 700px;}
+.prepend-15 { padding-left: 750px;}
+.prepend-16 { padding-left: 800px;}
+.prepend-17 { padding-left: 850px;}
+.prepend-18 { padding-left: 900px;}
+.prepend-19 { padding-left: 950px;}
+.prepend-20 { padding-left: 1000px;}
+.prepend-21 { padding-left: 1050px;}
+.prepend-22 { padding-left: 1100px;}
+.prepend-23 { padding-left: 1150px;}
+
+.vprepend-1 { padding-top: 50px;}
+.vprepend-2 { padding-top: 100px;}
+.vprepend-3 { padding-top: 150px;}
+.vprepend-4 { padding-top: 200px;}
+.vprepend-5 { padding-top: 250px;}
+.vprepend-6 { padding-top: 300px;}
+.vprepend-7 { padding-top: 350px;}
+.vprepend-8 { padding-top: 400px;}
+.vprepend-9 { padding-top: 450px;}
+.vprepend-10 { padding-top: 500px;}
+.vprepend-11 { padding-top: 550px;}
+.vprepend-12 { padding-top: 600px;}
+.vprepend-13 { padding-top: 650px;}
+.vprepend-14 { padding-top: 700px;}
+.vprepend-15 { padding-top: 750px;}
+.vprepend-16 { padding-top: 800px;}
+.vprepend-17 { padding-top: 850px;}
+.vprepend-18 { padding-top: 900px;}
+.vprepend-19 { padding-top: 950px;}
+.vprepend-20 { padding-top: 1000px;}
+.vprepend-21 { padding-top: 1050px;}
+.vprepend-22 { padding-top: 1100px;}
+.vprepend-23 { padding-top: 1150px;}
+.vprepend-24 { padding-top: 1200px;}
+
+/* Border on right hand side of a column. */
+.border {
+  padding-right: 4px;
+  margin-right: 8px;
+  border-right: 1px solid #ddd;
+}
+
+/* Border with more whitespace, spans one column. */
+.colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid #ddd;
+}
+
+
+/* Use these classes on an element to push it into the
+next column, or to pull it into the previous column.  */
+
+
+.pull-1 { margin-left: -50px; }
+.pull-2 { margin-left: -100px; }
+.pull-3 { margin-left: -150px; }
+.pull-4 { margin-left: -200px; }
+.pull-5 { margin-left: -250px; }
+.pull-6 { margin-left: -300px; }
+.pull-7 { margin-left: -350px; }
+.pull-8 { margin-left: -400px; }
+.pull-9 { margin-left: -450px; }
+.pull-10 { margin-left: -500px; }
+.pull-11 { margin-left: -550px; }
+.pull-12 { margin-left: -600px; }
+.pull-13 { margin-left: -650px; }
+.pull-14 { margin-left: -700px; }
+.pull-15 { margin-left: -750px; }
+.pull-16 { margin-left: -800px; }
+.pull-17 { margin-left: -850px; }
+.pull-18 { margin-left: -900px; }
+.pull-19 { margin-left: -950px; }
+.pull-20 { margin-left: -1000px; }
+.pull-21 { margin-left: -1050px; }
+.pull-22 { margin-left: -1100px; }
+.pull-23 { margin-left: -1150px; }
+.pull-24 { margin-left: -1200px; }
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {float: left; position:relative;}
+
+
+.push-1 { margin: 0 -50px 1.5em 50px; }
+.push-2 { margin: 0 -100px 1.5em 100px; }
+.push-3 { margin: 0 -150px 1.5em 150px; }
+.push-4 { margin: 0 -200px 1.5em 200px; }
+.push-5 { margin: 0 -250px 1.5em 250px; }
+.push-6 { margin: 0 -300px 1.5em 300px; }
+.push-7 { margin: 0 -350px 1.5em 350px; }
+.push-8 { margin: 0 -400px 1.5em 400px; }
+.push-9 { margin: 0 -450px 1.5em 450px; }
+.push-10 { margin: 0 -500px 1.5em 500px; }
+.push-11 { margin: 0 -550px 1.5em 550px; }
+.push-12 { margin: 0 -600px 1.5em 600px; }
+.push-13 { margin: 0 -650px 1.5em 650px; }
+.push-14 { margin: 0 -700px 1.5em 700px; }
+.push-15 { margin: 0 -750px 1.5em 750px; }
+.push-16 { margin: 0 -800px 1.5em 800px; }
+.push-17 { margin: 0 -850px 1.5em 850px; }
+.push-18 { margin: 0 -900px 1.5em 900px; }
+.push-19 { margin: 0 -950px 1.5em 950px; }
+.push-20 { margin: 0 -1000px 1.5em 1000px; }
+.push-21 { margin: 0 -1050px 1.5em 1050px; }
+.push-22 { margin: 0 -1100px 1.5em 1100px; }
+.push-23 { margin: 0 -1150px 1.5em 1150px; }
+.push-24 { margin: 0 -1200px 1.5em 1200px; }
+
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float: left; position:relative;}
+
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+
+/* In case you need to add a gutter above/below an element */
+div.prepend-top, .prepend-top {
+  margin-top:1.5em;
+}
+div.append-bottom, .append-bottom {
+  margin-bottom:1.5em;
+}
+
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5eCf9;
+}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  color: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 17px;
+  border: none;
+}
+
+hr.space {
+  background: #fff;
+  color: #fff;
+  visibility: hidden;
+}
+
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow:hidden;
+}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear { clear:both; }
+
+}
+
+/*###################################################################*/
+@media (max-width: 767px) {
+    
+}
+
+/*######################################################################################################################################################### */
+
+@media (min-width: 712px) and (max-width: 949px) {
+
+/* A container should group all your columns. */
+.container {
+  width:712px;
+  margin: 0 auto;
+}
+
+/* Use this class on any .span / container to see the grid. */
+.showgrid {
+  background: url(src/grid768.png);
+}
+
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {
+  float: left;
+  margin-right: 8px;
+}
+
+/* The last column in a row needs this class. */
+.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
+.span-1 {width: 22px;}
+
+.span-2 {width: 52px;}
+.span-3 {width: 82px;}
+.span-4 {width: 112px;}
+.span-5 {width: 142px;}
+.span-6 {width: 172px;}
+.span-7 {width: 202px;}
+.span-8 {width: 232px;}
+.span-9 {width: 262px;}
+.span-10 {width: 292px;}
+.span-11 {width: 322px;}
+.span-12 {width: 352px;}
+.span-13 {width: 382px;}
+.span-14 {width: 412px;}
+.span-15 {width: 442px;}
+.span-16 {width: 472px;}
+.span-17 {width: 502px;}
+.span-18 {width: 532px;}
+.span-19 {width: 562px;}
+.span-20 {width: 592px;}
+.span-21 {width: 622px;}
+.span-22 {width: 652px;}
+.span-23 {width: 682px;}
+.span-24 {width:712px; margin-right:0;}
+
+
+.vspan-1 {height: 22px;}
+.vspan-2 {height: 52px;}
+.vspan-3 {height: 82px;}
+.vspan-4 {height: 112px;}
+.vspan-5 {height: 142px;}
+.vspan-6 {height: 172px;}
+.vspan-7 {height: 202px;}
+.vspan-8 {height: 232px;}
+.vspan-9 {height: 262px;}
+.vspan-10 {height: 292px;}
+.vspan-11 {height: 322px;}
+.vspan-12 {height: 352px;}
+.vspan-13 {height: 382px;}
+.vspan-14 {height: 412px;}
+.vspan-15 {height: 442px;}
+.vspan-16 {height: 472px;}
+.vspan-17 {height: 502px;}
+.vspan-18 {height: 532px;}
+.vspan-19 {height: 562px;}
+.vspan-20 {height: 592px;}
+.vspan-21 {height: 622px;}
+.vspan-22 {height: 652px;}
+.vspan-23 {height: 682px;}
+.vspan-24 {height: 712px;}
+
+/* Use these classes to set the width of an input. */
+input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+input.span-1, textarea.span-1 { width: 10px; }
+input.span-2, textarea.span-2 { width: 40px; }
+input.span-3, textarea.span-3 { width: 70px; }
+input.span-4, textarea.span-4 { width: 100px; }
+input.span-5, textarea.span-5 { width: 130px; }
+input.span-6, textarea.span-6 { width: 160px; }
+input.span-7, textarea.span-7 { width: 190px; }
+input.span-8, textarea.span-8 { width: 220px; }
+input.span-9, textarea.span-9 { width: 250px; }
+input.span-10, textarea.span-10 { width: 280px; }
+input.span-11, textarea.span-11 { width: 310px; }
+input.span-12, textarea.span-12 { width: 340px; }
+input.span-13, textarea.span-13 { width: 370px; }
+input.span-14, textarea.span-14 { width: 400px; }
+input.span-15, textarea.span-15 { width: 430px; }
+input.span-16, textarea.span-16 { width: 460px; }
+input.span-17, textarea.span-17 { width: 490px; }
+input.span-18, textarea.span-18 { width: 520px; }
+input.span-19, textarea.span-19 { width: 550px; }
+input.span-20, textarea.span-20 { width: 580px; }
+input.span-21, textarea.span-21 { width: 610px; }
+input.span-22, textarea.span-22 { width: 640px; }
+input.span-23, textarea.span-23 { width: 670px; }
+input.span-24, textarea.span-24 { width: 700px; }
+
+input[type="button"].span-1 {width: 22px;}
+input[type="button"].span-2 {width: 52px;}
+input[type="button"].span-3 {width: 82px;}
+input[type="button"].span-4 {width: 112px;}
+input[type="button"].span-5 {width: 142px;}
+input[type="button"].span-6 {width: 172px;}
+input[type="button"].span-7 {width: 202px;}
+input[type="button"].span-8 {width: 232px;}
+input[type="button"].span-9 {width: 262px;}
+input[type="button"].span-10 {width: 292px;}
+input[type="button"].span-11 {width: 322px;}
+input[type="button"].span-12 {width: 352px;}
+input[type="button"].span-13 {width: 382px;}
+input[type="button"].span-14 {width: 412px;}
+input[type="button"].span-15 {width: 442px;}
+input[type="button"].span-16 {width: 472px;}
+input[type="button"].span-17 {width: 502px;}
+input[type="button"].span-18 {width: 532px;}
+input[type="button"].span-19 {width: 562px;}
+input[type="button"].span-20 {width: 592px;}
+input[type="button"].span-21 {width: 622px;}
+input[type="button"].span-22 {width: 652px;}
+input[type="button"].span-23 {width: 682px;}
+input[type="button"].span-24 {width:712px; margin-right:0;}
+
+/* Add these to a column to append empty cols. */
+
+.append-1 { padding-right: 30px;}
+.append-2 { padding-right: 60px;}
+.append-3 { padding-right: 90px;}
+.append-4 { padding-right: 120px;}
+.append-5 { padding-right: 150px;}
+.append-6 { padding-right: 180px;}
+.append-7 { padding-right: 210px;}
+.append-8 { padding-right: 240px;}
+.append-9 { padding-right: 270px;}
+.append-10 { padding-right: 300px;}
+.append-11 { padding-right: 330px;}
+.append-12 { padding-right: 360px;}
+.append-13 { padding-right: 390px;}
+.append-14 { padding-right: 420px;}
+.append-15 { padding-right: 450px;}
+.append-16 { padding-right: 480px;}
+.append-17 { padding-right: 510px;}
+.append-18 { padding-right: 540px;}
+.append-19 { padding-right: 570px;}
+.append-20 { padding-right: 600px;}
+.append-21 { padding-right: 630px;}
+.append-22 { padding-right: 660px;}
+.append-23 { padding-right: 690px;}
+
+.vappend-1 { padding-bottom: 30px;}
+.vappend-2 { padding-bottom: 60px;}
+.vappend-3 { padding-bottom: 90px;}
+.vappend-4 { padding-bottom: 120px;}
+.vappend-5 { padding-bottom: 150px;}
+.vappend-6 { padding-bottom: 180px;}
+.vappend-7 { padding-bottom: 210px;}
+.vappend-8 { padding-bottom: 240px;}
+.vappend-9 { padding-bottom: 270px;}
+.vappend-10 { padding-bottom: 300px;}
+.vappend-11 { padding-bottom: 330px;}
+.vappend-12 { padding-bottom: 360px;}
+.vappend-13 { padding-bottom: 390px;}
+.vappend-14 { padding-bottom: 420px;}
+.vappend-15 { padding-bottom: 450px;}
+.vappend-16 { padding-bottom: 480px;}
+.vappend-17 { padding-bottom: 510px;}
+.vappend-18 { padding-bottom: 540px;}
+.vappend-19 { padding-bottom: 570px;}
+.vappend-20 { padding-bottom: 600px;}
+.vappend-21 { padding-bottom: 630px;}
+.vappend-22 { padding-bottom: 660px;}
+.vappend-23 { padding-bottom: 690px;}
+.vappend-24 { padding-bottom: 720px;}
+
+/* Add these to a column to prepend empty cols. */
+
+.prepend-1 { padding-left: 30px;}
+.prepend-2 { padding-left: 60px;}
+.prepend-3 { padding-left: 90px;}
+.prepend-4 { padding-left: 120px;}
+.prepend-5 { padding-left: 150px;}
+.prepend-6 { padding-left: 180px;}
+.prepend-7 { padding-left: 210px;}
+.prepend-8 { padding-left: 240px;}
+.prepend-9 { padding-left: 270px;}
+.prepend-10 { padding-left: 300px;}
+.prepend-11 { padding-left: 330px;}
+.prepend-12 { padding-left: 360px;}
+.prepend-13 { padding-left: 390px;}
+.prepend-14 { padding-left: 420px;}
+.prepend-15 { padding-left: 450px;}
+.prepend-16 { padding-left: 480px;}
+.prepend-17 { padding-left: 510px;}
+.prepend-18 { padding-left: 540px;}
+.prepend-19 { padding-left: 570px;}
+.prepend-20 { padding-left: 600px;}
+.prepend-21 { padding-left: 630px;}
+.prepend-22 { padding-left: 660px;}
+.prepend-23 { padding-left: 690px;}
+
+.vprepend-1 { padding-top: 30px;}
+.vprepend-2 { padding-top: 60px;}
+.vprepend-3 { padding-top: 90px;}
+.vprepend-4 { padding-top: 120px;}
+.vprepend-5 { padding-top: 150px;}
+.vprepend-6 { padding-top: 180px;}
+.vprepend-7 { padding-top: 210px;}
+.vprepend-8 { padding-top: 240px;}
+.vprepend-9 { padding-top: 270px;}
+.vprepend-10 { padding-top: 300px;}
+.vprepend-11 { padding-top: 330px;}
+.vprepend-12 { padding-top: 360px;}
+.vprepend-13 { padding-top: 390px;}
+.vprepend-14 { padding-top: 420px;}
+.vprepend-15 { padding-top: 450px;}
+.vprepend-16 { padding-top: 480px;}
+.vprepend-17 { padding-top: 510px;}
+.vprepend-18 { padding-top: 540px;}
+.vprepend-19 { padding-top: 570px;}
+.vprepend-20 { padding-top: 600px;}
+.vprepend-21 { padding-top: 630px;}
+.vprepend-22 { padding-top: 660px;}
+.vprepend-23 { padding-top: 690px;}
+.vprepend-24 { padding-top: 720px;}
+
+/* Border on right hand side of a column. */
+.border {
+  padding-right: 4px;
+  margin-right: 3px;
+  border-right: 1px solid #ddd;
+}
+
+/* Border with more whitespace, spans one column. */
+.colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid #ddd;
+}
+
+
+/* Use these classes on an element to push it into the
+next column, or to pull it into the previous column.  */
+
+
+.pull-1 { margin-left: -30px; }
+.pull-2 { margin-left: -60px; }
+.pull-3 { margin-left: -90px; }
+.pull-4 { margin-left: -120px; }
+.pull-5 { margin-left: -150px; }
+.pull-6 { margin-left: -180px; }
+.pull-7 { margin-left: -210px; }
+.pull-8 { margin-left: -240px; }
+.pull-9 { margin-left: -270px; }
+.pull-10 { margin-left: -300px; }
+.pull-11 { margin-left: -330px; }
+.pull-12 { margin-left: -360px; }
+.pull-13 { margin-left: -390px; }
+.pull-14 { margin-left: -420px; }
+.pull-15 { margin-left: -450px; }
+.pull-16 { margin-left: -480px; }
+.pull-17 { margin-left: -510px; }
+.pull-18 { margin-left: -540px; }
+.pull-19 { margin-left: -570px; }
+.pull-20 { margin-left: -600px; }
+.pull-21 { margin-left: -630px; }
+.pull-22 { margin-left: -660px; }
+.pull-23 { margin-left: -690px; }
+.pull-24 { margin-left: -720px; }
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {float: left; position:relative;}
+
+
+.push-1 { margin:  0 -30px  1.5em 30px; }
+.push-2 { margin:  0 -60px  1.5em 60px; }
+.push-3 { margin:  0 -90px  1.5em 90px; }
+.push-4 { margin:  0 -120px 1.5em 120px; }
+.push-5 { margin:  0 -150px 1.5em 150px; }
+.push-6 { margin:  0 -180px 1.5em 180px; }
+.push-7 { margin:  0 -210px 1.5em 210px; }
+.push-8 { margin:  0 -240px 1.5em 240px; }
+.push-9 { margin:  0 -270px 1.5em 270px; }
+.push-10 { margin: 0 -300px 1.5em 300px; }
+.push-11 { margin: 0 -330px 1.5em 330px; }
+.push-12 { margin: 0 -360px 1.5em 360px; }
+.push-13 { margin: 0 -390px 1.5em 390px; }
+.push-14 { margin: 0 -420px 1.5em 420px; }
+.push-15 { margin: 0 -450px 1.5em 450px; }
+.push-16 { margin: 0 -480px 1.5em 480px; }
+.push-17 { margin: 0 -510px 1.5em 510px; }
+.push-18 { margin: 0 -540px 1.5em 540px; }
+.push-19 { margin: 0 -570px 1.5em 570px; }
+.push-20 { margin: 0 -600px 1.5em 600px; }
+.push-21 { margin: 0 -630px 1.5em 630px; }
+.push-22 { margin: 0 -660px 1.5em 660px; }
+.push-23 { margin: 0 -690px 1.5em 690px; }
+.push-24 { margin: 0 -720px 1.5em 720px; }
+
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float: left; position:relative;}
+
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+
+/* In case you need to add a gutter above/below an element */
+div.prepend-top, .prepend-top {
+  margin-top:1.5em;
+}
+div.append-bottom, .append-bottom {
+  margin-bottom:1.5em;
+}
+
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5eCf9;
+}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  color: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 17px;
+  border: none;
+}
+
+hr.space {
+  background: #fff;
+  color: #fff;
+  visibility: hidden;
+}
+
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow:hidden;
+}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear { clear:both; }
+
+}
+/*###################################################################*/
+
+
+textarea.lsinputrequired-success, input.lsinputrequired-success[type="text"], input.lsinputrequired-success[type="password"], input.lsinputrequired-success[type="datetime"], input.lsinputrequired-success[type="datetime-local"], input.lsinputrequired-success[type="date"], input.lsinputrequired-success[type="month"], input.lsinputrequired-success[type="time"], input.lsinputrequired-success[type="week"], input.lsinputrequired-success[type="number"], input.lsinputrequired-success[type="email"], input.lsinputrequired-success[type="url"], input.lsinputrequired-success[type="search"], input.lsinputrequired-success[type="tel"], input.lsinputrequired-success[type="color"]{
+	border-color: #468847;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+textarea.lsinputrequired-error, input.lsinputrequired-error[type="text"], input.lsinputrequired-error[type="password"], input.lsinputrequired-error[type="datetime"], input.lsinputrequired-error[type="datetime-local"], input.lsinputrequired-error[type="date"], input.lsinputrequired-error[type="month"], input.lsinputrequired-error[type="time"], input.lsinputrequired-error[type="week"], input.lsinputrequired-error[type="number"], input.lsinputrequired-error[type="email"], input.lsinputrequired-error[type="url"], input.lsinputrequired-error[type="search"], input.lsinputrequired-error[type="tel"], input.lsinputrequired-error[type="color"]{
+
+	border-color: #B94A48;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+textarea.lsinputrequired-forcus, input.lsinputrequired-forcus[type="text"], input.lsinputrequired-forcus[type="password"], input.lsinputrequired-forcus[type="datetime"], input.lsinputrequired-forcus[type="datetime-local"], input.lsinputrequired-forcus[type="date"], input.lsinputrequired-forcus[type="month"], input.lsinputrequired-forcus[type="time"], input.lsinputrequired-forcus[type="week"], input.lsinputrequired-forcus[type="number"], input.lsinputrequired-forcus[type="email"], input.lsinputrequired-forcus[type="url"], input.lsinputrequired-forcus[type="search"], input.lsinputrequired-forcus[type="tel"], input.lsinputrequired-forcus[type="color"]{
+	border-color: #356635;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+}
+
+/* file input button */
+ .ls-fileinput-button {
+	position: relative;
+	overflow: hidden;
+	margin-right: 4px;
+}
+.ls-fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border: solid transparent;
+    border-width: 0 0 100px 200px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-transform: translate(-300px, 0) scale(4);
+    direction: ltr;
+    cursor: pointer;
+}
+/* Fix for IE 6: */
+* html .ls-fileinput-button {
+    line-height: 24px;
+    margin: 1px -3px 0 0;
+}
+
+/* Fix for IE 7: */
+* + html .ls-fileinput-button {
+    line-height: 22px;
+    margin: 1px 0 0 0;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media  (min-width: 641px) and (max-width: 711px) {
+
+/* A container should group all your columns. */
+.container {
+  width:641px;
+  margin: 0 auto;
+}
+
+/* Use this class on any .span / container to see the grid. */
+.showgrid {
+  background: url(src/grid641.png);
+}
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {
+  float: left;
+  margin-right: 7px;
+}
+
+/* The last column in a row needs this class. */
+.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
+.span-1 {width: 20px;}
+.span-2 {width: 47px;}
+.span-3 {width: 74px;}
+.span-4 {width: 101px;}
+.span-5 {width: 128px;}
+.span-6 {width: 155px;}
+.span-7 {width: 182px;}
+.span-8 {width: 209px;}
+.span-9 {width: 236px;}
+.span-10 {width: 263px;}
+.span-11 {width: 290px;}
+.span-12 {width: 317px;}
+.span-13 {width: 344px;}
+.span-14 {width: 371px;}
+.span-15 {width: 398px;}
+.span-16 {width: 425px;}
+.span-17 {width: 452px;}
+.span-18 {width: 479px;}
+.span-19 {width: 506px;}
+.span-20 {width: 533px;}
+.span-21 {width: 560px;}
+.span-22 {width: 587px;}
+.span-23 {width: 614px;}
+.span-24 {width:641px; margin-right:0;}
+
+.vspan-1 {height: 20px;}
+.vspan-2 {height: 47px;}
+.vspan-3 {height: 74px;}
+.vspan-4 {height: 101px;}
+.vspan-5 {height: 128px;}
+.vspan-6 {height: 155px;}
+.vspan-7 {height: 182px;}
+.vspan-8 {height: 209px;}
+.vspan-9 {height: 236px;}
+.vspan-10 {height: 263px;}
+.vspan-11 {height: 290px;}
+.vspan-12 {height: 317px;}
+.vspan-13 {height: 344px;}
+.vspan-14 {height: 371px;}
+.vspan-15 {height: 398px;}
+.vspan-16 {height: 425px;}
+.vspan-17 {height: 452px;}
+.vspan-18 {height: 479px;}
+.vspan-19 {height: 506px;}
+.vspan-20 {height: 533px;}
+.vspan-21 {height: 560px;}
+.vspan-22 {height: 587px;}
+.vspan-23 {height: 614px;}
+.vspan-24 {height: 641px;}
+
+/* Use these classes to set the width of an input. */
+input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+input.span-1, textarea.span-1 { width: 20px;}
+input.span-2, textarea.span-2 { width: 47px;}
+input.span-3, textarea.span-3 { width: 74px;}
+input.span-4, textarea.span-4 { width: 101px;}
+input.span-5, textarea.span-5 { width: 128px;}
+input.span-6, textarea.span-6 { width: 155px;}
+input.span-7, textarea.span-7 { width: 182px;}
+input.span-8, textarea.span-8 { width: 209px;}
+input.span-9, textarea.span-9 { width: 236px;}
+input.span-10, textarea.span-10 { width: 263px;}
+input.span-11, textarea.span-11 { width: 290px;}
+input.span-12, textarea.span-12 { width: 317px;}
+input.span-13, textarea.span-13 { width: 344px;}
+input.span-14, textarea.span-14 { width: 371px;}
+input.span-15, textarea.span-15 { width: 398px;}
+input.span-16, textarea.span-16 { width: 425px;}
+input.span-17, textarea.span-17 { width: 452px;}
+input.span-18, textarea.span-18 { width: 479px;}
+input.span-19, textarea.span-19 { width: 506px;}
+input.span-20, textarea.span-20 { width: 533px;}
+input.span-21, textarea.span-21 { width: 560px;}
+input.span-22, textarea.span-22 { width: 587px;}
+input.span-23, textarea.span-23 { width: 614px;}
+input.span-24, textarea.span-24 { width: 641px; margin-right: 0;}
+
+input[type="button"].span-1 {width: 20px;}
+input[type="button"].span-2 {width: 47px;}
+input[type="button"].span-3 {width: 74px;}
+input[type="button"].span-4 {width: 101px;}
+input[type="button"].span-5 {width: 128px;}
+input[type="button"].span-6 {width: 155px;}
+input[type="button"].span-7 {width: 182px;}
+input[type="button"].span-8 {width: 209px;}
+input[type="button"].span-9 {width: 236px;}
+input[type="button"].span-10 {width: 263px;}
+input[type="button"].span-11 {width: 290px;}
+input[type="button"].span-12 {width: 317px;}
+input[type="button"].span-13 {width: 344px;}
+input[type="button"].span-14 {width: 371px;}
+input[type="button"].span-15 {width: 398px;}
+input[type="button"].span-16 {width: 425px;}
+input[type="button"].span-17 {width: 452px;}
+input[type="button"].span-18 {width: 479px;}
+input[type="button"].span-19 {width: 506px;}
+input[type="button"].span-20 {width: 533px;}
+input[type="button"].span-21 {width: 560px;}
+input[type="button"].span-22 {width: 587px;}
+input[type="button"].span-23 {width: 614px;}
+input[type="button"].span-24 {width: 641px; margin-right:0;}
+
+/* Add these to a column to append empty cols. */
+
+.append-1 { padding-right: 27px;}
+.append-2 { padding-right: 54px;}
+.append-3 { padding-right: 81px;}
+.append-4 { padding-right: 108px;}
+.append-5 { padding-right: 135px;}
+.append-6 { padding-right: 162px;}
+.append-7 { padding-right: 189px;}
+.append-8 { padding-right: 216px;}
+.append-9 { padding-right: 243px;}
+.append-10 { padding-right: 270px;}
+.append-11 { padding-right: 297px;}
+.append-12 { padding-right: 324px;}
+.append-13 { padding-right: 351px;}
+.append-14 { padding-right: 378px;}
+.append-15 { padding-right: 405px;}
+.append-16 { padding-right: 432px;}
+.append-17 { padding-right: 459px;}
+.append-18 { padding-right: 486px;}
+.append-19 { padding-right: 513px;}
+.append-20 { padding-right: 540px;}
+.append-21 { padding-right: 567px;}
+.append-22 { padding-right: 594px;}
+.append-23 { padding-right: 621px;}
+
+.vappend-1 { padding-bottom: 27px;}
+.vappend-2 { padding-bottom: 54px;}
+.vappend-3 { padding-bottom: 81px;}
+.vappend-4 { padding-bottom: 108px;}
+.vappend-5 { padding-bottom: 135px;}
+.vappend-6 { padding-bottom: 162px;}
+.vappend-7 { padding-bottom: 189px;}
+.vappend-8 { padding-bottom: 216px;}
+.vappend-9 { padding-bottom: 243px;}
+.vappend-10 { padding-bottom: 270px;}
+.vappend-11 { padding-bottom: 297px;}
+.vappend-12 { padding-bottom: 324px;}
+.vappend-13 { padding-bottom: 351px;}
+.vappend-14 { padding-bottom: 378px;}
+.vappend-15 { padding-bottom: 405px;}
+.vappend-16 { padding-bottom: 432px;}
+.vappend-17 { padding-bottom: 459px;}
+.vappend-18 { padding-bottom: 486px;}
+.vappend-19 { padding-bottom: 513px;}
+.vappend-20 { padding-bottom: 540px;}
+.vappend-21 { padding-bottom: 567px;}
+.vappend-22 { padding-bottom: 594px;}
+.vappend-23 { padding-bottom: 621px;}
+.vappend-24 { padding-bottom: 648px;}
+
+/* Add these to a column to prepend empty cols. */
+
+.prepend-1 { padding-left: 27px;}
+.prepend-2 { padding-left: 54px;}
+.prepend-3 { padding-left: 81px;}
+.prepend-4 { padding-left: 108px;}
+.prepend-5 { padding-left: 135px;}
+.prepend-6 { padding-left: 162px;}
+.prepend-7 { padding-left: 189px;}
+.prepend-8 { padding-left: 216px;}
+.prepend-9 { padding-left: 243px;}
+.prepend-10 { padding-left: 270px;}
+.prepend-11 { padding-left: 297px;}
+.prepend-12 { padding-left: 324px;}
+.prepend-13 { padding-left: 351px;}
+.prepend-14 { padding-left: 378px;}
+.prepend-15 { padding-left: 405px;}
+.prepend-16 { padding-left: 432px;}
+.prepend-17 { padding-left: 459px;}
+.prepend-18 { padding-left: 486px;}
+.prepend-19 { padding-left: 513px;}
+.prepend-20 { padding-left: 540px;}
+.prepend-21 { padding-left: 567px;}
+.prepend-22 { padding-left: 594px;}
+.prepend-23 { padding-left: 621px;}
+
+.vprepend-1 { padding-top: 27px;}
+.vprepend-2 { padding-top: 54px;}
+.vprepend-3 { padding-top: 81px;}
+.vprepend-4 { padding-top: 108px;}
+.vprepend-5 { padding-top: 135px;}
+.vprepend-6 { padding-top: 162px;}
+.vprepend-7 { padding-top: 189px;}
+.vprepend-8 { padding-top: 216px;}
+.vprepend-9 { padding-top: 243px;}
+.vprepend-10 { padding-top: 270px;}
+.vprepend-11 { padding-top: 297px;}
+.vprepend-12 { padding-top: 324px;}
+.vprepend-13 { padding-top: 351px;}
+.vprepend-14 { padding-top: 378px;}
+.vprepend-15 { padding-top: 405px;}
+.vprepend-16 { padding-top: 432px;}
+.vprepend-17 { padding-top: 459px;}
+.vprepend-18 { padding-top: 486px;}
+.vprepend-19 { padding-top: 513px;}
+.vprepend-20 { padding-top: 540px;}
+.vprepend-21 { padding-top: 567px;}
+.vprepend-22 { padding-top: 594px;}
+.vprepend-23 { padding-top: 621px;}
+.vprepend-24 { padding-top: 648px;}
+
+/* Border on right hand side of a column. */
+.border {
+  padding-right: 3px;
+  margin-right: 3px;
+  border-right: 1px solid #ddd;
+}
+
+/* Border with more whitespace, spans one column. */
+.colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid #ddd;
+}
+
+
+/* Use these classes on an element to push it into the
+next column, or to pull it into the previous column.  */
+
+
+.pull-1 { margin-left: -27px;}
+.pull-2 { margin-left: -54px;}
+.pull-3 { margin-left: -81px;}
+.pull-4 { margin-left: -108px;}
+.pull-5 { margin-left: -135px;}
+.pull-6 { margin-left: -162px;}
+.pull-7 { margin-left: -189px;}
+.pull-8 { margin-left: -216px;}
+.pull-9 { margin-left: -243px;}
+.pull-10 { margin-left: -270px;}
+.pull-11 { margin-left: -297px;}
+.pull-12 { margin-left: -324px;}
+.pull-13 { margin-left: -351px;}
+.pull-14 { margin-left: -378px;}
+.pull-15 { margin-left: -405px;}
+.pull-16 { margin-left: -432px;}
+.pull-17 { margin-left: -459px;}
+.pull-18 { margin-left: -486px;}
+.pull-19 { margin-left: -513px;}
+.pull-20 { margin-left: -540px;}
+.pull-21 { margin-left: -567px;}
+.pull-22 { margin-left: -594px;}
+.pull-23 { margin-left: -621px;}
+.pull-24 { margin-left: -648px;}
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {float: left; position:relative;}
+
+
+.push-1 { margin: 0 -27px 1.5em 27px; }
+.push-2 { margin: 0 -54px 1.5em 54px; }
+.push-3 { margin: 0 -81px 1.5em 81px; }
+.push-4 { margin: 0 -108px 1.5em 108px; }
+.push-5 { margin: 0 -135px 1.5em 135px; }
+.push-6 { margin: 0 -162px 1.5em 162px; }
+.push-7 { margin: 0 -189px 1.5em 189px; }
+.push-8 { margin: 0 -216px 1.5em 216px; }
+.push-9 { margin: 0 -243px 1.5em 243px; }
+.push-10 { margin: 0 -270px 1.5em 270px; }
+.push-11 { margin: 0 -297px 1.5em 297px; }
+.push-12 { margin: 0 -324px 1.5em 324px; }
+.push-13 { margin: 0 -351px 1.5em 351px; }
+.push-14 { margin: 0 -378px 1.5em 378px; }
+.push-15 { margin: 0 -405px 1.5em 405px; }
+.push-16 { margin: 0 -432px 1.5em 432px; }
+.push-17 { margin: 0 -459px 1.5em 459px; }
+.push-18 { margin: 0 -486px 1.5em 486px; }
+.push-19 { margin: 0 -513px 1.5em 513px; }
+.push-20 { margin: 0 -540px 1.5em 540px; }
+.push-21 { margin: 0 -567px 1.5em 567px; }
+.push-22 { margin: 0 -594px 1.5em 594px; }
+.push-23 { margin: 0 -621px 1.5em 621px; }
+.push-24 { margin: 0 -648px 1.5em 648px; }
+
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float: left; position:relative;}
+
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+
+/* In case you need to add a gutter above/below an element */
+div.prepend-top, .prepend-top {
+  margin-top:1.5em;
+}
+div.append-bottom, .append-bottom {
+  margin-bottom:1.5em;
+}
+
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5eCf9;
+}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  color: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 17px;
+  border: none;
+}
+
+hr.space {
+  background: #fff;
+  color: #fff;
+  visibility: hidden;
+}
+
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow:hidden;
+}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear { clear:both; }
+
+}
+
+/*######################################################################################################################################################*/
+
+@media  (min-width: 594px) and (max-width: 640px) {
+
+/* A container should group all your columns. */
+.container {
+  width:594px;
+  margin: 0 auto;
+}
+
+/* Use this class on any .span / container to see the grid. */
+.showgrid {
+  background: url(src/grid594.png);
+}
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {
+  float: left;
+  margin-right: 6px;
+}
+
+/* The last column in a row needs this class. */
+.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
+.span-1 {width: 19px;}
+
+.span-2 {width: 44px;}
+.span-3 {width: 69px;}
+.span-4 {width: 94px;}
+.span-5 {width: 119px;}
+.span-6 {width: 144px;}
+.span-7 {width: 169px;}
+.span-8 {width: 194px;}
+.span-9 {width: 219px;}
+.span-10 {width: 244px;}
+.span-11 {width: 269px;}
+.span-12 {width: 294px;}
+.span-13 {width: 319px;}
+.span-14 {width: 344px;}
+.span-15 {width: 369px;}
+.span-16 {width: 394px;}
+.span-17 {width: 419px;}
+.span-18 {width: 444px;}
+.span-19 {width: 469px;}
+.span-20 {width: 494px;}
+.span-21 {width: 519px;}
+.span-22 {width: 544px;}
+.span-23 {width: 569px;}
+.span-24 {width:594px; margin-right:0;}
+
+.vspan-1 {height: 19px;}
+.vspan-2 {height: 44px;}
+.vspan-3 {height: 69px;}
+.vspan-4 {height: 94px;}
+.vspan-5 {height: 119px;}
+.vspan-6 {height: 144px;}
+.vspan-7 {height: 169px;}
+.vspan-8 {height: 194px;}
+.vspan-9 {height: 219px;}
+.vspan-10 {height: 244px;}
+.vspan-11 {height: 269px;}
+.vspan-12 {height: 294px;}
+.vspan-13 {height: 319px;}
+.vspan-14 {height: 344px;}
+.vspan-15 {height: 369px;}
+.vspan-16 {height: 394px;}
+.vspan-17 {height: 419px;}
+.vspan-18 {height: 444px;}
+.vspan-19 {height: 469px;}
+.vspan-20 {height: 494px;}
+.vspan-21 {height: 519px;}
+.vspan-22 {height: 544px;}
+.vspan-23 {height: 569px;}
+.vspan-24 {height: 594px;}
+
+/* Use these classes to set the width of an input. */
+input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+input.span-1, textarea.span-1 { width: 19px; }
+input.span-2, textarea.span-2 { width: 44px; }
+input.span-3, textarea.span-3 { width: 69px; }
+input.span-4, textarea.span-4 { width: 94px; }
+input.span-5, textarea.span-5 { width: 119px; }
+input.span-6, textarea.span-6 { width: 144px; }
+input.span-7, textarea.span-7 { width: 169px; }
+input.span-8, textarea.span-8 { width: 194px; }
+input.span-9, textarea.span-9 { width: 219px; }
+input.span-10, textarea.span-10 { width: 244px; }
+input.span-11, textarea.span-11 { width: 269px; }
+input.span-12, textarea.span-12 { width: 294px; }
+input.span-13, textarea.span-13 { width: 319px; }
+input.span-14, textarea.span-14 { width: 344px; }
+input.span-15, textarea.span-15 { width: 369px; }
+input.span-16, textarea.span-16 { width: 394px; }
+input.span-17, textarea.span-17 { width: 419px; }
+input.span-18, textarea.span-18 { width: 444px; }
+input.span-19, textarea.span-19 { width: 469px; }
+input.span-20, textarea.span-20 { width: 494px; }
+input.span-21, textarea.span-21 { width: 519px; }
+input.span-22, textarea.span-22 { width: 544px; }
+input.span-23, textarea.span-23 { width: 569px; }
+input.span-24, textarea.span-24 { width: 594px; margin-right: 0;}
+
+input[type="button"].span-1 {width: 19px;}
+input[type="button"].span-2 {width: 44px;}
+input[type="button"].span-3 {width: 69px;}
+input[type="button"].span-4 {width: 94px;}
+input[type="button"].span-5 {width: 119px;}
+input[type="button"].span-6 {width: 144px;}
+input[type="button"].span-7 {width: 169px;}
+input[type="button"].span-8 {width: 194px;}
+input[type="button"].span-9 {width: 219px;}
+input[type="button"].span-10 {width: 244px;}
+input[type="button"].span-11 {width: 269px;}
+input[type="button"].span-12 {width: 294px;}
+input[type="button"].span-13 {width: 319px;}
+input[type="button"].span-14 {width: 344px;}
+input[type="button"].span-15 {width: 369px;}
+input[type="button"].span-16 {width: 394px;}
+input[type="button"].span-17 {width: 419px;}
+input[type="button"].span-18 {width: 444px;}
+input[type="button"].span-19 {width: 469px;}
+input[type="button"].span-20 {width: 494px;}
+input[type="button"].span-21 {width: 519px;}
+input[type="button"].span-22 {width: 544px;}
+input[type="button"].span-23 {width: 569px;}
+input[type="button"].span-24 {width: 594px; margin-right:0;}
+
+/* Add these to a column to append empty cols. */
+
+.append-1 { padding-right: 25px;}
+.append-2 { padding-right: 50px;}
+.append-3 { padding-right: 75px;}
+.append-4 { padding-right: 100px;}
+.append-5 { padding-right: 125px;}
+.append-6 { padding-right: 150px;}
+.append-7 { padding-right: 175px;}
+.append-8 { padding-right: 200px;}
+.append-9 { padding-right: 225px;}
+.append-10 { padding-right: 250px;}
+.append-11 { padding-right: 275px;}
+.append-12 { padding-right: 300px;}
+.append-13 { padding-right: 325px;}
+.append-14 { padding-right: 350px;}
+.append-15 { padding-right: 375px;}
+.append-16 { padding-right: 400px;}
+.append-17 { padding-right: 425px;}
+.append-18 { padding-right: 450px;}
+.append-19 { padding-right: 475px;}
+.append-20 { padding-right: 500px;}
+.append-21 { padding-right: 525px;}
+.append-22 { padding-right: 550px;}
+.append-23 { padding-right: 575px;}
+
+.vappend-1 { padding-bottom: 25px;}
+.vappend-2 { padding-bottom: 50px;}
+.vappend-3 { padding-bottom: 75px;}
+.vappend-4 { padding-bottom: 100px;}
+.vappend-5 { padding-bottom: 125px;}
+.vappend-6 { padding-bottom: 150px;}
+.vappend-7 { padding-bottom: 175px;}
+.vappend-8 { padding-bottom: 200px;}
+.vappend-9 { padding-bottom: 225px;}
+.vappend-10 { padding-bottom: 250px;}
+.vappend-11 { padding-bottom: 275px;}
+.vappend-12 { padding-bottom: 300px;}
+.vappend-13 { padding-bottom: 325px;}
+.vappend-14 { padding-bottom: 350px;}
+.vappend-15 { padding-bottom: 375px;}
+.vappend-16 { padding-bottom: 400px;}
+.vappend-17 { padding-bottom: 425px;}
+.vappend-18 { padding-bottom: 450px;}
+.vappend-19 { padding-bottom: 475px;}
+.vappend-20 { padding-bottom: 500px;}
+.vappend-21 { padding-bottom: 525px;}
+.vappend-22 { padding-bottom: 550px;}
+.vappend-23 { padding-bottom: 575px;}
+.vappend-24 { padding-bottom: 600px;}
+
+/* Add these to a column to prepend empty cols. */
+
+.prepend-1 { padding-left: 25px;}
+.prepend-2 { padding-left: 50px;}
+.prepend-3 { padding-left: 75px;}
+.prepend-4 { padding-left: 100px;}
+.prepend-5 { padding-left: 125px;}
+.prepend-6 { padding-left: 150px;}
+.prepend-7 { padding-left: 175px;}
+.prepend-8 { padding-left: 200px;}
+.prepend-9 { padding-left: 225px;}
+.prepend-10 { padding-left: 250px;}
+.prepend-11 { padding-left: 275px;}
+.prepend-12 { padding-left: 300px;}
+.prepend-13 { padding-left: 325px;}
+.prepend-14 { padding-left: 350px;}
+.prepend-15 { padding-left: 375px;}
+.prepend-16 { padding-left: 400px;}
+.prepend-17 { padding-left: 425px;}
+.prepend-18 { padding-left: 450px;}
+.prepend-19 { padding-left: 475px;}
+.prepend-20 { padding-left: 500px;}
+.prepend-21 { padding-left: 525px;}
+.prepend-22 { padding-left: 550px;}
+.prepend-23 { padding-left: 575px;}
+
+.vprepend-1 { padding-top: 25px;}
+.vprepend-2 { padding-top: 50px;}
+.vprepend-3 { padding-top: 75px;}
+.vprepend-4 { padding-top: 100px;}
+.vprepend-5 { padding-top: 125px;}
+.vprepend-6 { padding-top: 150px;}
+.vprepend-7 { padding-top: 175px;}
+.vprepend-8 { padding-top: 200px;}
+.vprepend-9 { padding-top: 225px;}
+.vprepend-10 { padding-top: 250px;}
+.vprepend-11 { padding-top: 275px;}
+.vprepend-12 { padding-top: 300px;}
+.vprepend-13 { padding-top: 325px;}
+.vprepend-14 { padding-top: 350px;}
+.vprepend-15 { padding-top: 375px;}
+.vprepend-16 { padding-top: 400px;}
+.vprepend-17 { padding-top: 425px;}
+.vprepend-18 { padding-top: 450px;}
+.vprepend-19 { padding-top: 475px;}
+.vprepend-20 { padding-top: 500px;}
+.vprepend-21 { padding-top: 525px;}
+.vprepend-22 { padding-top: 550px;}
+.vprepend-23 { padding-top: 575px;}
+.vprepend-24 { padding-top: 600px;}
+
+/* Border on right hand side of a column. */
+.border {
+  padding-right: 3px;
+  margin-right: 2px;
+  border-right: 1px solid #ddd;
+}
+
+/* Border with more whitespace, spans one column. */
+.colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid #ddd;
+}
+
+
+/* Use these classes on an element to push it into the
+next column, or to pull it into the previous column.  */
+
+
+.pull-1 { margin-left: -25px;}
+.pull-2 { margin-left: -50px;}
+.pull-3 { margin-left: -75px;}
+.pull-4 { margin-left: -100px;}
+.pull-5 { margin-left: -125px;}
+.pull-6 { margin-left: -150px;}
+.pull-7 { margin-left: -175px;}
+.pull-8 { margin-left: -200px;}
+.pull-9 { margin-left: -225px;}
+.pull-10 { margin-left: -250px;}
+.pull-11 { margin-left: -275px;}
+.pull-12 { margin-left: -300px;}
+.pull-13 { margin-left: -325px;}
+.pull-14 { margin-left: -350px;}
+.pull-15 { margin-left: -375px;}
+.pull-16 { margin-left: -400px;}
+.pull-17 { margin-left: -425px;}
+.pull-18 { margin-left: -450px;}
+.pull-19 { margin-left: -475px;}
+.pull-20 { margin-left: -500px;}
+.pull-21 { margin-left: -525px;}
+.pull-22 { margin-left: -550px;}
+.pull-23 { margin-left: -575px;}
+.pull-24 { margin-left: -600px; }
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {float: left; position:relative;}
+
+
+.push-1 { margin: 0 -25px 1.5em  25px;  }
+.push-2 { margin: 0 -50px 1.5em  50px;  }
+.push-3 { margin: 0 -75px 1.5em  75px;  }
+.push-4 { margin: 0 -100px 1.5em 100px; }
+.push-5 { margin: 0 -125px 1.5em 125px; }
+.push-6 { margin: 0 -150px 1.5em 150px; }
+.push-7 { margin: 0 -175px 1.5em 175px; }
+.push-8 { margin: 0 -200px 1.5em 200px; }
+.push-9 { margin: 0 -225px 1.5em 225px; }
+.push-10 { margin: 0 -250px 1.5em 250px; }
+.push-11 { margin: 0 -275px 1.5em 275px; }
+.push-12 { margin: 0 -300px 1.5em 300px; }
+.push-13 { margin: 0 -325px 1.5em 325px; }
+.push-14 { margin: 0 -350px 1.5em 350px; }
+.push-15 { margin: 0 -375px 1.5em 375px; }
+.push-16 { margin: 0 -400px 1.5em 400px; }
+.push-17 { margin: 0 -425px 1.5em 425px; }
+.push-18 { margin: 0 -450px 1.5em 450px; }
+.push-19 { margin: 0 -475px 1.5em 475px; }
+.push-20 { margin: 0 -500px 1.5em 500px; }
+.push-21 { margin: 0 -525px 1.5em 525px; }
+.push-22 { margin: 0 -550px 1.5em 550px; }
+.push-23 { margin: 0 -575px 1.5em 575px; }
+.push-24 { margin: 0 -600px 1.5em 600px; }
+
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float: left; position:relative;}
+
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+
+/* In case you need to add a gutter above/below an element */
+div.prepend-top, .prepend-top {
+  margin-top:1.5em;
+}
+div.append-bottom, .append-bottom {
+  margin-bottom:1.5em;
+}
+
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5eCf9;
+}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  color: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 17px;
+  border: none;
+}
+
+hr.space {
+  background: #fff;
+  color: #fff;
+  visibility: hidden;
+}
+
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow:hidden;
+}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear { clear:both; }
+
+}
+
+/*######################################################################################################################################################*/
+
+@media (min-width: 522px) and (max-width: 593px) {
+
+/* A container should group all your columns. */
+.container {
+  width:522px;
+  margin: 0,auto;
+}
+
+/* Use this class on any .span / container to see the grid. */
+.showgrid {
+  background: url(src/grid522.png);
+}
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {
+  float: left;
+  margin-right: 6px;
+}
+
+/* The last column in a row needs this class. */
+.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
+.span-1 {width: 16px;}
+.span-2 {width: 38px;}
+.span-3 {width: 60px;}
+.span-4 {width: 82px;}
+.span-5 {width: 104px;}
+.span-6 {width: 126px;}
+.span-7 {width: 148px;}
+.span-8 {width: 170px;}
+.span-9 {width: 192px;}
+.span-10 {width: 214px;}
+.span-11 {width: 236px;}
+.span-12 {width: 258px;}
+.span-13 {width: 280px;}
+.span-14 {width: 302px;}
+.span-15 {width: 324px;}
+.span-16 {width: 346px;}
+.span-17 {width: 368px;}
+.span-18 {width: 390px;}
+.span-19 {width: 412px;}
+.span-20 {width: 434px;}
+.span-21 {width: 456px;}
+.span-22 {width: 478px;}
+.span-23 {width: 500px;}
+.span-24 {width:522px; margin-right:0;}
+
+.vspan-1 {height: 16px;}
+.vspan-2 {height: 38px;}
+.vspan-3 {height: 60px;}
+.vspan-4 {height: 82px;}
+.vspan-5 {height: 104px;}
+.vspan-6 {height: 126px;}
+.vspan-7 {height: 148px;}
+.vspan-8 {height: 170px;}
+.vspan-9 {height: 192px;}
+.vspan-10 {height: 214px;}
+.vspan-11 {height: 236px;}
+.vspan-12 {height: 258px;}
+.vspan-13 {height: 280px;}
+.vspan-14 {height: 302px;}
+.vspan-15 {height: 324px;}
+.vspan-16 {height: 346px;}
+.vspan-17 {height: 368px;}
+.vspan-18 {height: 390px;}
+.vspan-19 {height: 412px;}
+.vspan-20 {height: 434px;}
+.vspan-21 {height: 456px;}
+.vspan-22 {height: 478px;}
+.vspan-23 {height: 500px;}
+.vspan-24 {height: 522px;}
+
+/* Use these classes to set the width of an input. */
+input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+
+input.span-1, textarea.span-1 { width: 16px;}
+input.span-2, textarea.span-2 { width: 38px;}
+input.span-3, textarea.span-3 { width: 60px;}
+input.span-4, textarea.span-4 { width: 82px;}
+input.span-5, textarea.span-5 { width: 104px;}
+input.span-6, textarea.span-6 { width: 126px;}
+input.span-7, textarea.span-7 { width: 148px;}
+input.span-8, textarea.span-8 { width: 170px;}
+input.span-9, textarea.span-9 { width: 192px;}
+input.span-10, textarea.span-10 { width: 214px;}
+input.span-11, textarea.span-11 { width: 236px;}
+input.span-12, textarea.span-12 { width: 258px;}
+input.span-13, textarea.span-13 { width: 280px;}
+input.span-14, textarea.span-14 { width: 302px;}
+input.span-15, textarea.span-15 { width: 324px;}
+input.span-16, textarea.span-16 { width: 346px;}
+input.span-17, textarea.span-17 { width: 368px;}
+input.span-18, textarea.span-18 { width: 390px;}
+input.span-19, textarea.span-19 { width: 412px;}
+input.span-20, textarea.span-20 { width: 434px;}
+input.span-21, textarea.span-21 { width: 456px;}
+input.span-22, textarea.span-22 { width: 478px;}
+input.span-23, textarea.span-23 { width: 500px;}
+input.span-24, textarea.span-24 { width:522px; margin-right:0;}
+
+input[type="button"].span-1 {width: 16px;}
+input[type="button"].span-2 {width: 38px;}
+input[type="button"].span-3 {width: 60px;}
+input[type="button"].span-4 {width: 82px;}
+input[type="button"].span-5 {width: 104px;}
+input[type="button"].span-6 {width: 126px;}
+input[type="button"].span-7 {width: 148px;}
+input[type="button"].span-8 {width: 170px;}
+input[type="button"].span-9 {width: 192px;}
+input[type="button"].span-10 {width: 214px;}
+input[type="button"].span-11 {width: 236px;}
+input[type="button"].span-12 {width: 258px;}
+input[type="button"].span-13 {width: 280px;}
+input[type="button"].span-14 {width: 302px;}
+input[type="button"].span-15 {width: 324px;}
+input[type="button"].span-16 {width: 346px;}
+input[type="button"].span-17 {width: 368px;}
+input[type="button"].span-18 {width: 390px;}
+input[type="button"].span-19 {width: 412px;}
+input[type="button"].span-20 {width: 434px;}
+input[type="button"].span-21 {width: 456px;}
+input[type="button"].span-22 {width: 478px;}
+input[type="button"].span-23 {width: 500px;}
+input[type="button"].span-24 {width:522px; margin-right:0;}
+
+/* Add these to a column to append empty cols. */
+
+.append-1 { padding-right: 22px;}
+.append-2 { padding-right: 44px;}
+.append-3 { padding-right: 66px;}
+.append-4 { padding-right: 88px;}
+.append-5 { padding-right: 110px;}
+.append-6 { padding-right: 132px;}
+.append-7 { padding-right: 154px;}
+.append-8 { padding-right: 176px;}
+.append-9 { padding-right: 198px;}
+.append-10 { padding-right: 220px;}
+.append-11 { padding-right: 242px;}
+.append-12 { padding-right: 264px;}
+.append-13 { padding-right: 286px;}
+.append-14 { padding-right: 308px;}
+.append-15 { padding-right: 330px;}
+.append-16 { padding-right: 352px;}
+.append-17 { padding-right: 374px;}
+.append-18 { padding-right: 396px;}
+.append-19 { padding-right: 418px;}
+.append-20 { padding-right: 440px;}
+.append-21 { padding-right: 462px;}
+.append-22 { padding-right: 484px;}
+.append-23 { padding-right: 506px;}
+
+.vappend-1 { padding-bottom: 22px;}
+.vappend-2 { padding-bottom: 44px;}
+.vappend-3 { padding-bottom: 66px;}
+.vappend-4 { padding-bottom: 88px;}
+.vappend-5 { padding-bottom: 110px;}
+.vappend-6 { padding-bottom: 132px;}
+.vappend-7 { padding-bottom: 154px;}
+.vappend-8 { padding-bottom: 176px;}
+.vappend-9 { padding-bottom: 198px;}
+.vappend-10 { padding-bottom: 220px;}
+.vappend-11 { padding-bottom: 242px;}
+.vappend-12 { padding-bottom: 264px;}
+.vappend-13 { padding-bottom: 286px;}
+.vappend-14 { padding-bottom: 308px;}
+.vappend-15 { padding-bottom: 330px;}
+.vappend-16 { padding-bottom: 352px;}
+.vappend-17 { padding-bottom: 374px;}
+.vappend-18 { padding-bottom: 396px;}
+.vappend-19 { padding-bottom: 418px;}
+.vappend-20 { padding-bottom: 440px;}
+.vappend-21 { padding-bottom: 462px;}
+.vappend-22 { padding-bottom: 484px;}
+.vappend-23 { padding-bottom: 506px;}
+.vappend-24 { padding-bottom: 528px;}
+
+/* Add these to a column to prepend empty cols. */
+
+.prepend-1 { padding-left: 22px;}
+.prepend-2 { padding-left: 44px;}
+.prepend-3 { padding-left: 66px;}
+.prepend-4 { padding-left: 88px;}
+.prepend-5 { padding-left: 110px;}
+.prepend-6 { padding-left: 132px;}
+.prepend-7 { padding-left: 154px;}
+.prepend-8 { padding-left: 176px;}
+.prepend-9 { padding-left: 198px;}
+.prepend-10 { padding-left: 220px;}
+.prepend-11 { padding-left: 242px;}
+.prepend-12 { padding-left: 264px;}
+.prepend-13 { padding-left: 286px;}
+.prepend-14 { padding-left: 308px;}
+.prepend-15 { padding-left: 330px;}
+.prepend-16 { padding-left: 352px;}
+.prepend-17 { padding-left: 374px;}
+.prepend-18 { padding-left: 396px;}
+.prepend-19 { padding-left: 418px;}
+.prepend-20 { padding-left: 440px;}
+.prepend-21 { padding-left: 462px;}
+.prepend-22 { padding-left: 484px;}
+.prepend-23 { padding-left: 506px;}
+
+.vprepend-1 { padding-top: 22px;}
+.vprepend-2 { padding-top: 44px;}
+.vprepend-3 { padding-top: 66px;}
+.vprepend-4 { padding-top: 88px;}
+.vprepend-5 { padding-top: 110px;}
+.vprepend-6 { padding-top: 132px;}
+.vprepend-7 { padding-top: 154px;}
+.vprepend-8 { padding-top: 176px;}
+.vprepend-9 { padding-top: 198px;}
+.vprepend-10 { padding-top: 220px;}
+.vprepend-11 { padding-top: 242px;}
+.vprepend-12 { padding-top: 264px;}
+.vprepend-13 { padding-top: 286px;}
+.vprepend-14 { padding-top: 308px;}
+.vprepend-15 { padding-top: 330px;}
+.vprepend-16 { padding-top: 352px;}
+.vprepend-17 { padding-top: 374px;}
+.vprepend-18 { padding-top: 396px;}
+.vprepend-19 { padding-top: 418px;}
+.vprepend-20 { padding-top: 440px;}
+.vprepend-21 { padding-top: 462px;}
+.vprepend-22 { padding-top: 484px;}
+.vprepend-23 { padding-top: 506px;}
+.vprepend-24 { padding-top: 528px;}
+
+
+/* Border on right hand side of a column. */
+.border {
+  padding-right: 3px;
+  margin-right: 2px;
+  border-right: 1px solid #ddd;
+}
+
+/* Border with more whitespace, spans one column. */
+.colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid #ddd;
+}
+
+
+/* Use these classes on an element to push it into the
+next column, or to pull it into the previous column.  */
+
+
+.pull-1 { margin-left: -22px;}
+.pull-2 { margin-left: -44px;}
+.pull-3 { margin-left: -66px;}
+.pull-4 { margin-left: -88px;}
+.pull-5 { margin-left: -110px;}
+.pull-6 { margin-left: -132px;}
+.pull-7 { margin-left: -154px;}
+.pull-8 { margin-left: -176px;}
+.pull-9 { margin-left: -198px;}
+.pull-10 { margin-left: -220px;}
+.pull-11 { margin-left: -242px;}
+.pull-12 { margin-left: -264px;}
+.pull-13 { margin-left: -286px;}
+.pull-14 { margin-left: -308px;}
+.pull-15 { margin-left: -330px;}
+.pull-16 { margin-left: -352px;}
+.pull-17 { margin-left: -374px;}
+.pull-18 { margin-left: -396px;}
+.pull-19 { margin-left: -418px;}
+.pull-20 { margin-left: -440px;}
+.pull-21 { margin-left: -462px;}
+.pull-22 { margin-left: -484px;}
+.pull-23 { margin-left: -506px;}
+.pull-24 { margin-left: -528px;}
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {float: left; position:relative;}
+
+
+.push-1 { margin: 0 -22px 1.5em 22px; }
+.push-2 { margin: 0 -44px 1.5em 44px; }
+.push-3 { margin: 0 -66px 1.5em 66px; }
+.push-4 { margin: 0 -88px 1.5em 88px; }
+.push-5 { margin: 0 -110px 1.5em 110px; }
+.push-6 { margin: 0 -132px 1.5em 132px; }
+.push-7 { margin: 0 -154px 1.5em 154px; }
+.push-8 { margin: 0 -176px 1.5em 176px; }
+.push-9 { margin: 0 -198px 1.5em 198px; }
+.push-10 { margin: 0 -220px 1.5em 220px; }
+.push-11 { margin: 0 -242px 1.5em 242px; }
+.push-12 { margin: 0 -264px 1.5em 264px; }
+.push-13 { margin: 0 -286px 1.5em 286px; }
+.push-14 { margin: 0 -308px 1.5em 308px; }
+.push-15 { margin: 0 -330px 1.5em 330px; }
+.push-16 { margin: 0 -352px 1.5em 352px; }
+.push-17 { margin: 0 -374px 1.5em 374px; }
+.push-18 { margin: 0 -396px 1.5em 396px; }
+.push-19 { margin: 0 -418px 1.5em 418px; }
+.push-20 { margin: 0 -440px 1.5em 440px; }
+.push-21 { margin: 0 -462px 1.5em 462px; }
+.push-22 { margin: 0 -484px 1.5em 484px; }
+.push-23 { margin: 0 -506px 1.5em 506px; }
+.push-24 { margin: 0 -528px 1.5em 528px; }
+
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float: left; position:relative;}
+
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+
+/* In case you need to add a gutter above/below an element */
+div.prepend-top, .prepend-top {
+  margin-top:1.5em;
+}
+div.append-bottom, .append-bottom {
+  margin-bottom:1.5em;
+}
+
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5eCf9;
+}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  color: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 17px;
+  border: none;
+}
+
+hr.space {
+  background: #fff;
+  color: #fff;
+  visibility: hidden;
+}
+
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow:hidden;
+}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear { clear:both; }
+   
+}
+
+/*#######################################################################################################################################################*/
+
+@media  (min-width: 475px) and (max-width: 521px) {
+
+/* A container should group all your columns. */
+.container {
+  width:475px;
+  margin: 0 auto;
+}
+
+/* Use this class on any .span / container to see the grid. */
+.showgrid {
+  background: url(src/grid475.png);
+}
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {
+  float: left;
+  margin-right: 5px;
+}
+
+/* The last column in a row needs this class. */
+.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
+.span-1 {width: 15px;}
+
+.span-2 {width: 35px;}
+.span-3 {width: 55px;}
+.span-4 {width: 75px;}
+.span-5 {width: 95px;}
+.span-6 {width: 115px;}
+.span-7 {width: 135px;}
+.span-8 {width: 155px;}
+.span-9 {width: 175px;}
+.span-10 {width: 195px;}
+.span-11 {width: 215px;}
+.span-12 {width: 235px;}
+.span-13 {width: 255px;}
+.span-14 {width: 275px;}
+.span-15 {width: 295px;}
+.span-16 {width: 315px;}
+.span-17 {width: 335px;}
+.span-18 {width: 355px;}
+.span-19 {width: 375px;}
+.span-20 {width: 395px;}
+.span-21 {width: 415px;}
+.span-22 {width: 435px;}
+.span-23 {width: 455px;}
+.span-24 {width:475px; margin-right:0;}
+
+.vspan-1 {height: 15px;}
+.vspan-2 {height: 35px;}
+.vspan-3 {height: 55px;}
+.vspan-4 {height: 75px;}
+.vspan-5 {height: 95px;}
+.vspan-6 {height: 115px;}
+.vspan-7 {height: 135px;}
+.vspan-8 {height: 155px;}
+.vspan-9 {height: 175px;}
+.vspan-10 {height: 195px;}
+.vspan-11 {height: 215px;}
+.vspan-12 {height: 235px;}
+.vspan-13 {height: 255px;}
+.vspan-14 {height: 275px;}
+.vspan-15 {height: 295px;}
+.vspan-16 {height: 315px;}
+.vspan-17 {height: 335px;}
+.vspan-18 {height: 355px;}
+.vspan-19 {height: 375px;}
+.vspan-20 {height: 395px;}
+.vspan-21 {height: 415px;}
+.vspan-22 {height: 435px;}
+.vspan-23 {height: 455px;}
+.vspan-24 {height: 475px;}
+
+/* Use these classes to set the width of an input. */
+input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+input.span-1, textarea.span-1 { width: 15px; }
+input.span-2, textarea.span-2 { width: 35px; }
+input.span-3, textarea.span-3 { width: 55px; }
+input.span-4, textarea.span-4 { width: 75px; }
+input.span-5, textarea.span-5 { width: 95px; }
+input.span-6, textarea.span-6 { width: 115px; }
+input.span-7, textarea.span-7 { width: 135px; }
+input.span-8, textarea.span-8 { width: 155px; }
+input.span-9, textarea.span-9 { width: 175px; }
+input.span-10, textarea.span-10 { width: 195px; }
+input.span-11, textarea.span-11 { width: 215px; }
+input.span-12, textarea.span-12 { width: 235px; }
+input.span-13, textarea.span-13 { width: 255px; }
+input.span-14, textarea.span-14 { width: 275px; }
+input.span-15, textarea.span-15 { width: 295px; }
+input.span-16, textarea.span-16 { width: 315px; }
+input.span-17, textarea.span-17 { width: 355px; }
+input.span-18, textarea.span-18 { width: 355px; }
+input.span-19, textarea.span-19 { width: 375px; }
+input.span-20, textarea.span-20 { width: 395px; }
+input.span-21, textarea.span-21 { width: 415px; }
+input.span-22, textarea.span-22 { width: 435px; }
+input.span-23, textarea.span-23 { width: 455px; }
+input.span-24, textarea.span-24 { width: 475px; margin-right: 0;}
+
+input[type="button"].span-1 {width: 15px;}
+input[type="button"].span-2 {width: 35px;}
+input[type="button"].span-3 {width: 55px;}
+input[type="button"].span-4 {width: 75px;}
+input[type="button"].span-5 {width: 95px;}
+input[type="button"].span-6 {width: 115px;}
+input[type="button"].span-7 {width: 135px;}
+input[type="button"].span-8 {width: 155px;}
+input[type="button"].span-9 {width: 175px;}
+input[type="button"].span-10 {width: 195px;}
+input[type="button"].span-11 {width: 215px;}
+input[type="button"].span-12 {width: 235px;}
+input[type="button"].span-13 {width: 255px;}
+input[type="button"].span-14 {width: 275px;}
+input[type="button"].span-15 {width: 295px;}
+input[type="button"].span-16 {width: 315px;}
+input[type="button"].span-17 {width: 335px;}
+input[type="button"].span-18 {width: 355px;}
+input[type="button"].span-19 {width: 375px;}
+input[type="button"].span-20 {width: 395px;}
+input[type="button"].span-21 {width: 415px;}
+input[type="button"].span-22 {width: 435px;}
+input[type="button"].span-23 {width: 455px;}
+input[type="button"].span-24 {width: 475px; margin-right:0;}
+
+/* Add these to a column to append empty cols. */
+
+.append-1 { padding-right: 20px;}
+.append-2 { padding-right: 40px;}
+.append-3 { padding-right: 60px;}
+.append-4 { padding-right: 80px;}
+.append-5 { padding-right: 100px;}
+.append-6 { padding-right: 120px;}
+.append-7 { padding-right: 140px;}
+.append-8 { padding-right: 160px;}
+.append-9 { padding-right: 180px;}
+.append-10 { padding-right: 200px;}
+.append-11 { padding-right: 220px;}
+.append-12 { padding-right: 240px;}
+.append-13 { padding-right: 260px;}
+.append-14 { padding-right: 280px;}
+.append-15 { padding-right: 300px;}
+.append-16 { padding-right: 320px;}
+.append-17 { padding-right: 340px;}
+.append-18 { padding-right: 360px;}
+.append-19 { padding-right: 380px;}
+.append-20 { padding-right: 400px;}
+.append-21 { padding-right: 420px;}
+.append-22 { padding-right: 440px;}
+.append-23 { padding-right: 460px;}
+
+.vappend-1 { padding-bottom: 20px;}
+.vappend-2 { padding-bottom: 40px;}
+.vappend-3 { padding-bottom: 60px;}
+.vappend-4 { padding-bottom: 80px;}
+.vappend-5 { padding-bottom: 100px;}
+.vappend-6 { padding-bottom: 120px;}
+.vappend-7 { padding-bottom: 140px;}
+.vappend-8 { padding-bottom: 160px;}
+.vappend-9 { padding-bottom: 180px;}
+.vappend-10 { padding-bottom: 200px;}
+.vappend-11 { padding-bottom: 220px;}
+.vappend-12 { padding-bottom: 240px;}
+.vappend-13 { padding-bottom: 260px;}
+.vappend-14 { padding-bottom: 280px;}
+.vappend-15 { padding-bottom: 300px;}
+.vappend-16 { padding-bottom: 320px;}
+.vappend-17 { padding-bottom: 340px;}
+.vappend-18 { padding-bottom: 360px;}
+.vappend-19 { padding-bottom: 380px;}
+.vappend-20 { padding-bottom: 400px;}
+.vappend-21 { padding-bottom: 420px;}
+.vappend-22 { padding-bottom: 440px;}
+.vappend-23 { padding-bottom: 460px;}
+.vappend-24 { padding-bottom: 480px;}
+
+/* Add these to a column to prepend empty cols. */
+
+.prepend-1 { padding-left: 20px;}
+.prepend-2 { padding-left: 40px;}
+.prepend-3 { padding-left: 60px;}
+.prepend-4 { padding-left: 80px;}
+.prepend-5 { padding-left: 100px;}
+.prepend-6 { padding-left: 120px;}
+.prepend-7 { padding-left: 140px;}
+.prepend-8 { padding-left: 160px;}
+.prepend-9 { padding-left: 180px;}
+.prepend-10 { padding-left: 200px;}
+.prepend-11 { padding-left: 220px;}
+.prepend-12 { padding-left: 240px;}
+.prepend-13 { padding-left: 260px;}
+.prepend-14 { padding-left: 280px;}
+.prepend-15 { padding-left: 300px;}
+.prepend-16 { padding-left: 320px;}
+.prepend-17 { padding-left: 340px;}
+.prepend-18 { padding-left: 360px;}
+.prepend-19 { padding-left: 380px;}
+.prepend-20 { padding-left: 400px;}
+.prepend-21 { padding-left: 420px;}
+.prepend-22 { padding-left: 440px;}
+.prepend-23 { padding-left: 460px;}
+
+.vprepend-1 { padding-top: 20px;}
+.vprepend-2 { padding-top: 40px;}
+.vprepend-3 { padding-top: 60px;}
+.vprepend-4 { padding-top: 80px;}
+.vprepend-5 { padding-top: 100px;}
+.vprepend-6 { padding-top: 120px;}
+.vprepend-7 { padding-top: 140px;}
+.vprepend-8 { padding-top: 160px;}
+.vprepend-9 { padding-top: 180px;}
+.vprepend-10 { padding-top: 200px;}
+.vprepend-11 { padding-top: 220px;}
+.vprepend-12 { padding-top: 240px;}
+.vprepend-13 { padding-top: 260px;}
+.vprepend-14 { padding-top: 280px;}
+.vprepend-15 { padding-top: 300px;}
+.vprepend-16 { padding-top: 320px;}
+.vprepend-17 { padding-top: 340px;}
+.vprepend-18 { padding-top: 360px;}
+.vprepend-19 { padding-top: 380px;}
+.vprepend-20 { padding-top: 400px;}
+.vprepend-21 { padding-top: 420px;}
+.vprepend-22 { padding-top: 440px;}
+.vprepend-23 { padding-top: 460px;}
+.vprepend-24 { padding-top: 480px;}
+
+
+/* Border on right hand side of a column. */
+.border {
+  padding-right: 2px;
+  margin-right: 2px;
+  border-right: 1px solid #ddd;
+}
+
+/* Border with more whitespace, spans one column. */
+.colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid #ddd;
+}
+
+
+/* Use these classes on an element to push it into the
+next column, or to pull it into the previous column.  */
+
+
+.pull-1 { margin-left: -20px; }
+.pull-2 { margin-left: -40px; }
+.pull-3 { margin-left: -60px; }
+.pull-4 { margin-left: -80px; }
+.pull-5 { margin-left: -100px; }
+.pull-6 { margin-left: -120px; }
+.pull-7 { margin-left: -140px; }
+.pull-8 { margin-left: -160px; }
+.pull-9 { margin-left: -180px; }
+.pull-10 { margin-left: -200px; }
+.pull-11 { margin-left: -220px; }
+.pull-12 { margin-left: -240px; }
+.pull-13 { margin-left: -260px; }
+.pull-14 { margin-left: -280px; }
+.pull-15 { margin-left: -300px; }
+.pull-16 { margin-left: -320px; }
+.pull-17 { margin-left: -340px; }
+.pull-18 { margin-left: -360px; }
+.pull-19 { margin-left: -380px; }
+.pull-20 { margin-left: -400px; }
+.pull-21 { margin-left: -420px; }
+.pull-22 { margin-left: -440px; }
+.pull-23 { margin-left: -460px; }
+.pull-24 { margin-left: -480px; }
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {float: left; position:relative;}
+
+
+.push-1 { margin: 0 -20px 1.5em 20px; }
+.push-2 { margin: 0 -40px 1.5em 40px; }
+.push-3 { margin: 0 -60px 1.5em 60px; }
+.push-4 { margin: 0 -80px 1.5em 80px; }
+.push-5 { margin: 0 -100px 1.5em 100px; }
+.push-6 { margin: 0 -120px 1.5em 120px; }
+.push-7 { margin: 0 -140px 1.5em 140px; }
+.push-8 { margin: 0 -160px 1.5em 160px; }
+.push-9 { margin: 0 -180px 1.5em 180px; }
+.push-10 { margin: 0 -200px 1.5em 200px; }
+.push-11 { margin: 0 -220px 1.5em 220px; }
+.push-12 { margin: 0 -240px 1.5em 240px; }
+.push-13 { margin: 0 -260px 1.5em 260px; }
+.push-14 { margin: 0 -280px 1.5em 280px; }
+.push-15 { margin: 0 -300px 1.5em 300px; }
+.push-16 { margin: 0 -320px 1.5em 320px; }
+.push-17 { margin: 0 -340px 1.5em 340px; }
+.push-18 { margin: 0 -360px 1.5em 360px; }
+.push-19 { margin: 0 -380px 1.5em 380px; }
+.push-20 { margin: 0 -400px 1.5em 400px; }
+.push-21 { margin: 0 -420px 1.5em 420px; }
+.push-22 { margin: 0 -440px 1.5em 440px; }
+.push-23 { margin: 0 -460px 1.5em 460px; }
+.push-24 { margin: 0 -480px 1.5em 480px; }
+
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float: left; position:relative;}
+
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+
+/* In case you need to add a gutter above/below an element */
+div.prepend-top, .prepend-top {
+  margin-top:1.5em;
+}
+div.append-bottom, .append-bottom {
+  margin-bottom:1.5em;
+}
+
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5eCf9;
+}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  color: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 17px;
+  border: none;
+}
+
+hr.space {
+  background: #fff;
+  color: #fff;
+  visibility: hidden;
+}
+
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow:hidden;
+}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear { clear:both; }
+   
+}
+
+/*######################################################################################################################################################*/
+
+@media (min-width: 404px) and (max-width: 474px) {
+
+/* A container should group all your columns. */
+.container {
+  width:404px;
+  margin: 0,auto;
+}
+
+/* Use this class on any .span / container to see the grid. */
+.showgrid {
+  background: url(src/grid404.png);
+}
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {
+  float: left;
+  margin-right: 4px;
+}
+
+/* The last column in a row needs this class. */
+.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
+.span-1 {width: 13px;}
+.span-2 {width: 30px;}
+.span-3 {width: 47px;}
+.span-4 {width: 64px;}
+.span-5 {width: 81px;}
+.span-6 {width: 98px;}
+.span-7 {width: 115px;}
+.span-8 {width: 132px;}
+.span-9 {width: 149px;}
+.span-10 {width: 166px;}
+.span-11 {width: 183px;}
+.span-12 {width: 200px;}
+.span-13 {width: 217px;}
+.span-14 {width: 234px;}
+.span-15 {width: 251px;}
+.span-16 {width: 268px;}
+.span-17 {width: 285px;}
+.span-18 {width: 302px;}
+.span-19 {width: 319px;}
+.span-20 {width: 336px;}
+.span-21 {width: 353px;}
+.span-22 {width: 370px;}
+.span-23 {width: 387px;}
+.span-24 {width:404px; margin-right:0;}
+
+.vspan-1 {height: 13px;}
+.vspan-2 {height: 30px;}
+.vspan-3 {height: 47px;}
+.vspan-4 {height: 64px;}
+.vspan-5 {height: 81px;}
+.vspan-6 {height: 98px;}
+.vspan-7 {height: 115px;}
+.vspan-8 {height: 132px;}
+.vspan-9 {height: 149px;}
+.vspan-10 {height: 166px;}
+.vspan-11 {height: 183px;}
+.vspan-12 {height: 200px;}
+.vspan-13 {height: 217px;}
+.vspan-14 {height: 234px;}
+.vspan-15 {height: 251px;}
+.vspan-16 {height: 268px;}
+.vspan-17 {height: 285px;}
+.vspan-18 {height: 302px;}
+.vspan-19 {height: 319px;}
+.vspan-20 {height: 336px;}
+.vspan-21 {height: 353px;}
+.vspan-22 {height: 370px;}
+.vspan-23 {height: 387px;}
+.vspan-24 {height: 404px;}
+
+/* Use these classes to set the width of an input. */
+input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+
+input.span-1, textarea.span-1 { width: 13px;}
+input.span-2, textarea.span-2 { width: 30px;}
+input.span-3, textarea.span-3 { width: 47px;}
+input.span-4, textarea.span-4 { width: 64px;}
+input.span-5, textarea.span-5 { width: 81px;}
+input.span-6, textarea.span-6 { width: 98px;}
+input.span-7, textarea.span-7 { width: 115px;}
+input.span-8, textarea.span-8 { width: 132px;}
+input.span-9, textarea.span-9 { width: 149px;}
+input.span-10, textarea.span-10 { width: 166px;}
+input.span-11, textarea.span-11 { width: 183px;}
+input.span-12, textarea.span-12 { width: 200px;}
+input.span-13, textarea.span-13 { width: 217px;}
+input.span-14, textarea.span-14 { width: 234px;}
+input.span-15, textarea.span-15 { width: 251px;}
+input.span-16, textarea.span-16 { width: 268px;}
+input.span-17, textarea.span-17 { width: 285px;}
+input.span-18, textarea.span-18 { width: 302px;}
+input.span-19, textarea.span-19 { width: 319px;}
+input.span-20, textarea.span-20 { width: 336px;}
+input.span-21, textarea.span-21 { width: 353px;}
+input.span-22, textarea.span-22 { width: 370px;}
+input.span-23, textarea.span-23 { width: 387px;}
+input.span-24, textarea.span-24 { width:404px; margin-right:0;}
+
+input[type="button"].span-1 {width: 13px;}
+input[type="button"].span-2 {width: 30px;}
+input[type="button"].span-3 {width: 47px;}
+input[type="button"].span-4 {width: 64px;}
+input[type="button"].span-5 {width: 81px;}
+input[type="button"].span-6 {width: 98px;}
+input[type="button"].span-7 {width: 115px;}
+input[type="button"].span-8 {width: 132px;}
+input[type="button"].span-9 {width: 149px;}
+input[type="button"].span-10 {width: 166px;}
+input[type="button"].span-11 {width: 183px;}
+input[type="button"].span-12 {width: 200px;}
+input[type="button"].span-13 {width: 217px;}
+input[type="button"].span-14 {width: 234px;}
+input[type="button"].span-15 {width: 251px;}
+input[type="button"].span-16 {width: 268px;}
+input[type="button"].span-17 {width: 285px;}
+input[type="button"].span-18 {width: 302px;}
+input[type="button"].span-19 {width: 319px;}
+input[type="button"].span-20 {width: 336px;}
+input[type="button"].span-21 {width: 353px;}
+input[type="button"].span-22 {width: 370px;}
+input[type="button"].span-23 {width: 387px;}
+input[type="button"].span-24 {width:404px; margin-right:0;}
+
+/* Add these to a column to append empty cols. */
+
+.append-1 { padding-right: 17px;}
+.append-2 { padding-right: 34px;}
+.append-3 { padding-right: 51px;}
+.append-4 { padding-right: 68px;}
+.append-5 { padding-right: 85px;}
+.append-6 { padding-right: 102px;}
+.append-7 { padding-right: 119px;}
+.append-8 { padding-right: 136px;}
+.append-9 { padding-right: 153px;}
+.append-10 { padding-right: 170px;}
+.append-11 { padding-right: 187px;}
+.append-12 { padding-right: 204px;}
+.append-13 { padding-right: 221px;}
+.append-14 { padding-right: 238px;}
+.append-15 { padding-right: 255px;}
+.append-16 { padding-right: 272px;}
+.append-17 { padding-right: 289px;}
+.append-18 { padding-right: 306px;}
+.append-19 { padding-right: 323px;}
+.append-20 { padding-right: 340px;}
+.append-21 { padding-right: 357px;}
+.append-22 { padding-right: 374px;}
+.append-23 { padding-right: 391px;}
+
+.vappend-1 { padding-bottom: 17px;}
+.vappend-2 { padding-bottom: 34px;}
+.vappend-3 { padding-bottom: 51px;}
+.vappend-4 { padding-bottom: 68px;}
+.vappend-5 { padding-bottom: 85px;}
+.vappend-6 { padding-bottom: 102px;}
+.vappend-7 { padding-bottom: 119px;}
+.vappend-8 { padding-bottom: 136px;}
+.vappend-9 { padding-bottom: 153px;}
+.vappend-10 { padding-bottom: 170px;}
+.vappend-11 { padding-bottom: 187px;}
+.vappend-12 { padding-bottom: 204px;}
+.vappend-13 { padding-bottom: 221px;}
+.vappend-14 { padding-bottom: 238px;}
+.vappend-15 { padding-bottom: 255px;}
+.vappend-16 { padding-bottom: 272px;}
+.vappend-17 { padding-bottom: 289px;}
+.vappend-18 { padding-bottom: 306px;}
+.vappend-19 { padding-bottom: 323px;}
+.vappend-20 { padding-bottom: 340px;}
+.vappend-21 { padding-bottom: 357px;}
+.vappend-22 { padding-bottom: 374px;}
+.vappend-23 { padding-bottom: 391px;}
+.vappend-24 { padding-bottom: 408px;}
+
+/* Add these to a column to prepend empty cols. */
+
+.prepend-1 { padding-left: 17px;}
+.prepend-2 { padding-left: 34px;}
+.prepend-3 { padding-left: 51px;}
+.prepend-4 { padding-left: 68px;}
+.prepend-5 { padding-left: 85px;}
+.prepend-6 { padding-left: 102px;}
+.prepend-7 { padding-left: 119px;}
+.prepend-8 { padding-left: 136px;}
+.prepend-9 { padding-left: 153px;}
+.prepend-10 { padding-left: 170px;}
+.prepend-11 { padding-left: 187px;}
+.prepend-12 { padding-left: 204px;}
+.prepend-13 { padding-left: 221px;}
+.prepend-14 { padding-left: 238px;}
+.prepend-15 { padding-left: 255px;}
+.prepend-16 { padding-left: 272px;}
+.prepend-17 { padding-left: 289px;}
+.prepend-18 { padding-left: 306px;}
+.prepend-19 { padding-left: 323px;}
+.prepend-20 { padding-left: 340px;}
+.prepend-21 { padding-left: 357px;}
+.prepend-22 { padding-left: 374px;}
+.prepend-23 { padding-left: 391px;}
+
+.vprepend-1 { padding-top: 17px;}
+.vprepend-2 { padding-top: 34px;}
+.vprepend-3 { padding-top: 51px;}
+.vprepend-4 { padding-top: 68px;}
+.vprepend-5 { padding-top: 85px;}
+.vprepend-6 { padding-top: 102px;}
+.vprepend-7 { padding-top: 119px;}
+.vprepend-8 { padding-top: 136px;}
+.vprepend-9 { padding-top: 153px;}
+.vprepend-10 { padding-top: 170px;}
+.vprepend-11 { padding-top: 187px;}
+.vprepend-12 { padding-top: 204px;}
+.vprepend-13 { padding-top: 221px;}
+.vprepend-14 { padding-top: 238px;}
+.vprepend-15 { padding-top: 255px;}
+.vprepend-16 { padding-top: 272px;}
+.vprepend-17 { padding-top: 289px;}
+.vprepend-18 { padding-top: 306px;}
+.vprepend-19 { padding-top: 323px;}
+.vprepend-20 { padding-top: 340px;}
+.vprepend-21 { padding-top: 357px;}
+.vprepend-22 { padding-top: 374px;}
+.vprepend-23 { padding-top: 391px;}
+.vprepend-24 { padding-top: 408px;}
+
+/* Border on right hand side of a column. */
+.border {
+  padding-right: 1px;
+  margin-right: 2px;
+  border-right: 1px solid #ddd;
+}
+
+/* Border with more whitespace, spans one column. */
+.colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid #ddd;
+}
+
+
+/* Use these classes on an element to push it into the
+next column, or to pull it into the previous column.  */
+
+
+.pull-1 { margin-left: -17px;}
+.pull-2 { margin-left: -34px;}
+.pull-3 { margin-left: -51px;}
+.pull-4 { margin-left: -68px;}
+.pull-5 { margin-left: -85px;}
+.pull-6 { margin-left: -102px;}
+.pull-7 { margin-left: -119px;}
+.pull-8 { margin-left: -136px;}
+.pull-9 { margin-left: -153px;}
+.pull-10 { margin-left: -170px;}
+.pull-11 { margin-left: -187px;}
+.pull-12 { margin-left: -204px;}
+.pull-13 { margin-left: -221px;}
+.pull-14 { margin-left: -238px;}
+.pull-15 { margin-left: -255px;}
+.pull-16 { margin-left: -272px;}
+.pull-17 { margin-left: -289px;}
+.pull-18 { margin-left: -306px;}
+.pull-19 { margin-left: -323px;}
+.pull-20 { margin-left: -340px;}
+.pull-21 { margin-left: -357px;}
+.pull-22 { margin-left: -374px;}
+.pull-23 { margin-left: -391px;}
+.pull-24 { margin-left: -408px;}
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {float: left; position:relative;}
+
+
+.push-1 { margin: 0 -17px 1.5em 17px; }
+.push-2 { margin: 0 -34px 1.5em 34px; }
+.push-3 { margin: 0 -51px 1.5em 51px; }
+.push-4 { margin: 0 -68px 1.5em 68px; }
+.push-5 { margin: 0 -85px 1.5em 85px; }
+.push-6 { margin: 0 -102px 1.5em 102px; }
+.push-7 { margin: 0 -119px 1.5em 119px; }
+.push-8 { margin: 0 -136px 1.5em 136px; }
+.push-9 { margin: 0 -153px 1.5em 153px; }
+.push-10 { margin: 0 -170px 1.5em 170px; }
+.push-11 { margin: 0 -187px 1.5em 187px; }
+.push-12 { margin: 0 -204px 1.5em 204px; }
+.push-13 { margin: 0 -221px 1.5em 221px; }
+.push-14 { margin: 0 -238px 1.5em 238px; }
+.push-15 { margin: 0 -255px 1.5em 255px; }
+.push-16 { margin: 0 -272px 1.5em 272px; }
+.push-17 { margin: 0 -289px 1.5em 289px; }
+.push-18 { margin: 0 -306px 1.5em 306px; }
+.push-19 { margin: 0 -323px 1.5em 323px; }
+.push-20 { margin: 0 -340px 1.5em 340px; }
+.push-21 { margin: 0 -357px 1.5em 357px; }
+.push-22 { margin: 0 -374px 1.5em 374px; }
+.push-23 { margin: 0 -391px 1.5em 391px; }
+.push-24 { margin: 0 -408px 1.5em 408px; }
+
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float: left; position:relative;}
+
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+
+/* In case you need to add a gutter above/below an element */
+div.prepend-top, .prepend-top {
+  margin-top:1.5em;
+}
+div.append-bottom, .append-bottom {
+  margin-bottom:1.5em;
+}
+
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5eCf9;
+}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  color: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 17px;
+  border: none;
+}
+
+hr.space {
+  background: #fff;
+  color: #fff;
+  visibility: hidden;
+}
+
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow:hidden;
+}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear { clear:both; }
+   
+}
+
+/*######################################################################################################################################################*/
+
+@media (min-width: 356px) and (max-width: 403px) {
+
+/* A container should group all your columns. */
+.container {
+  width:356px;
+  margin: 0,auto;
+}
+
+/* Use this class on any .span / container to see the grid. */
+.showgrid {
+  background: url(src/grid356.png);
+}
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {
+  float: left;
+  margin-right: 4px;
+}
+
+/* The last column in a row needs this class. */
+.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
+.span-1 {width: 11px;}
+.span-2 {width: 26px;}
+.span-3 {width: 41px;}
+.span-4 {width: 56px;}
+.span-5 {width: 71px;}
+.span-6 {width: 86px;}
+.span-7 {width: 101px;}
+.span-8 {width: 116px;}
+.span-9 {width: 131px;}
+.span-10 {width: 146px;}
+.span-11 {width: 161px;}
+.span-12 {width: 176px;}
+.span-13 {width: 191px;}
+.span-14 {width: 206px;}
+.span-15 {width: 221px;}
+.span-16 {width: 236px;}
+.span-17 {width: 251px;}
+.span-18 {width: 266px;}
+.span-19 {width: 281px;}
+.span-20 {width: 296px;}
+.span-21 {width: 311px;}
+.span-22 {width: 326px;}
+.span-23 {width: 341px;}
+.span-24 {width:356px; margin-right:0;}
+
+.vspan-1 {height: 11px;}
+.vspan-2 {height: 26px;}
+.vspan-3 {height: 41px;}
+.vspan-4 {height: 56px;}
+.vspan-5 {height: 71px;}
+.vspan-6 {height: 86px;}
+.vspan-7 {height: 101px;}
+.vspan-8 {height: 116px;}
+.vspan-9 {height: 131px;}
+.vspan-10 {height: 146px;}
+.vspan-11 {height: 161px;}
+.vspan-12 {height: 176px;}
+.vspan-13 {height: 191px;}
+.vspan-14 {height: 206px;}
+.vspan-15 {height: 221px;}
+.vspan-16 {height: 236px;}
+.vspan-17 {height: 251px;}
+.vspan-18 {height: 266px;}
+.vspan-19 {height: 281px;}
+.vspan-20 {height: 296px;}
+.vspan-21 {height: 311px;}
+.vspan-22 {height: 326px;}
+.vspan-23 {height: 341px;}
+.vspan-24 {height: 356px;}
+
+/* Use these classes to set the width of an input. */
+input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+
+input.span-1, textarea.span-1 { width: 11px;}
+input.span-2, textarea.span-2 { width: 26px;}
+input.span-3, textarea.span-3 { width: 41px;}
+input.span-4, textarea.span-4 { width: 56px;}
+input.span-5, textarea.span-5 { width: 71px;}
+input.span-6, textarea.span-6 { width: 86px;}
+input.span-7, textarea.span-7 { width: 101px;}
+input.span-8, textarea.span-8 { width: 116px;}
+input.span-9, textarea.span-9 { width: 131px;}
+input.span-10, textarea.span-10 { width: 146px;}
+input.span-11, textarea.span-11 { width: 161px;}
+input.span-12, textarea.span-12 { width: 176px;}
+input.span-13, textarea.span-13 { width: 191px;}
+input.span-14, textarea.span-14 { width: 206px;}
+input.span-15, textarea.span-15 { width: 221px;}
+input.span-16, textarea.span-16 { width: 236px;}
+input.span-17, textarea.span-17 { width: 251px;}
+input.span-18, textarea.span-18 { width: 266px;}
+input.span-19, textarea.span-19 { width: 281px;}
+input.span-20, textarea.span-20 { width: 296px;}
+input.span-21, textarea.span-21 { width: 311px;}
+input.span-22, textarea.span-22 { width: 326px;}
+input.span-23, textarea.span-23 { width: 341px;}
+input.span-24, textarea.span-24 { width:356px; margin-right:0;}
+
+input[type="button"].span-1 {width: 11px;}
+input[type="button"].span-2 {width: 26px;}
+input[type="button"].span-3 {width: 41px;}
+input[type="button"].span-4 {width: 56px;}
+input[type="button"].span-5 {width: 71px;}
+input[type="button"].span-6 {width: 86px;}
+input[type="button"].span-7 {width: 101px;}
+input[type="button"].span-8 {width: 116px;}
+input[type="button"].span-9 {width: 131px;}
+input[type="button"].span-10 {width: 146px;}
+input[type="button"].span-11 {width: 161px;}
+input[type="button"].span-12 {width: 176px;}
+input[type="button"].span-13 {width: 191px;}
+input[type="button"].span-14 {width: 206px;}
+input[type="button"].span-15 {width: 221px;}
+input[type="button"].span-16 {width: 236px;}
+input[type="button"].span-17 {width: 251px;}
+input[type="button"].span-18 {width: 266px;}
+input[type="button"].span-19 {width: 281px;}
+input[type="button"].span-20 {width: 296px;}
+input[type="button"].span-21 {width: 311px;}
+input[type="button"].span-22 {width: 326px;}
+input[type="button"].span-23 {width: 341px;}
+input[type="button"].span-24 {width:356px; margin-right:0;}
+
+/* Add these to a column to append empty cols. */
+
+.append-1 { padding-right: 15px;}
+.append-2 { padding-right: 30px;}
+.append-3 { padding-right: 45px;}
+.append-4 { padding-right: 60px;}
+.append-5 { padding-right: 75px;}
+.append-6 { padding-right: 90px;}
+.append-7 { padding-right: 105px;}
+.append-8 { padding-right: 120px;}
+.append-9 { padding-right: 135px;}
+.append-10 { padding-right: 150px;}
+.append-11 { padding-right: 165px;}
+.append-12 { padding-right: 180px;}
+.append-13 { padding-right: 195px;}
+.append-14 { padding-right: 210px;}
+.append-15 { padding-right: 225px;}
+.append-16 { padding-right: 240px;}
+.append-17 { padding-right: 255px;}
+.append-18 { padding-right: 270px;}
+.append-19 { padding-right: 285px;}
+.append-20 { padding-right: 300px;}
+.append-21 { padding-right: 315px;}
+.append-22 { padding-right: 330px;}
+.append-23 { padding-right: 345px;}
+
+.vappend-1 { padding-bottom: 15px;}
+.vappend-2 { padding-bottom: 30px;}
+.vappend-3 { padding-bottom: 45px;}
+.vappend-4 { padding-bottom: 60px;}
+.vappend-5 { padding-bottom: 75px;}
+.vappend-6 { padding-bottom: 90px;}
+.vappend-7 { padding-bottom: 105px;}
+.vappend-8 { padding-bottom: 120px;}
+.vappend-9 { padding-bottom: 135px;}
+.vappend-10 { padding-bottom: 150px;}
+.vappend-11 { padding-bottom: 165px;}
+.vappend-12 { padding-bottom: 180px;}
+.vappend-13 { padding-bottom: 195px;}
+.vappend-14 { padding-bottom: 210px;}
+.vappend-15 { padding-bottom: 225px;}
+.vappend-16 { padding-bottom: 240px;}
+.vappend-17 { padding-bottom: 255px;}
+.vappend-18 { padding-bottom: 270px;}
+.vappend-19 { padding-bottom: 285px;}
+.vappend-20 { padding-bottom: 300px;}
+.vappend-21 { padding-bottom: 315px;}
+.vappend-22 { padding-bottom: 330px;}
+.vappend-23 { padding-bottom: 345px;}
+.vappend-24 { padding-bottom: 360px;}
+
+/* Add these to a column to prepend empty cols. */
+
+.prepend-1 { padding-left: 15px;}
+.prepend-2 { padding-left: 30px;}
+.prepend-3 { padding-left: 45px;}
+.prepend-4 { padding-left: 60px;}
+.prepend-5 { padding-left: 75px;}
+.prepend-6 { padding-left: 90px;}
+.prepend-7 { padding-left: 105px;}
+.prepend-8 { padding-left: 120px;}
+.prepend-9 { padding-left: 135px;}
+.prepend-10 { padding-left: 150px;}
+.prepend-11 { padding-left: 165px;}
+.prepend-12 { padding-left: 180px;}
+.prepend-13 { padding-left: 195px;}
+.prepend-14 { padding-left: 210px;}
+.prepend-15 { padding-left: 225px;}
+.prepend-16 { padding-left: 240px;}
+.prepend-17 { padding-left: 255px;}
+.prepend-18 { padding-left: 270px;}
+.prepend-19 { padding-left: 285px;}
+.prepend-20 { padding-left: 300px;}
+.prepend-21 { padding-left: 315px;}
+.prepend-22 { padding-left: 330px;}
+.prepend-23 { padding-left: 345px;}
+
+.vprepend-1 { padding-top: 15px;}
+.vprepend-2 { padding-top: 30px;}
+.vprepend-3 { padding-top: 45px;}
+.vprepend-4 { padding-top: 60px;}
+.vprepend-5 { padding-top: 75px;}
+.vprepend-6 { padding-top: 90px;}
+.vprepend-7 { padding-top: 105px;}
+.vprepend-8 { padding-top: 120px;}
+.vprepend-9 { padding-top: 135px;}
+.vprepend-10 { padding-top: 150px;}
+.vprepend-11 { padding-top: 165px;}
+.vprepend-12 { padding-top: 180px;}
+.vprepend-13 { padding-top: 195px;}
+.vprepend-14 { padding-top: 210px;}
+.vprepend-15 { padding-top: 225px;}
+.vprepend-16 { padding-top: 240px;}
+.vprepend-17 { padding-top: 255px;}
+.vprepend-18 { padding-top: 270px;}
+.vprepend-19 { padding-top: 285px;}
+.vprepend-20 { padding-top: 300px;}
+.vprepend-21 { padding-top: 315px;}
+.vprepend-22 { padding-top: 330px;}
+.vprepend-23 { padding-top: 345px;}
+.vprepend-24 { padding-top: 360px;}
+
+/* Border on right hand side of a column. */
+.border {
+  padding-right: 1px;
+  margin-right: 2px;
+  border-right: 1px solid #ddd;
+}
+
+/* Border with more whitespace, spans one column. */
+.colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid #ddd;
+}
+
+
+/* Use these classes on an element to push it into the
+next column, or to pull it into the previous column.  */
+
+
+.pull-1 { margin-left: -15px;}
+.pull-2 { margin-left: -30px;}
+.pull-3 { margin-left: -45px;}
+.pull-4 { margin-left: -60px;}
+.pull-5 { margin-left: -75px;}
+.pull-6 { margin-left: -90px;}
+.pull-7 { margin-left: -105px;}
+.pull-8 { margin-left: -120px;}
+.pull-9 { margin-left: -135px;}
+.pull-10 { margin-left: -150px;}
+.pull-11 { margin-left: -165px;}
+.pull-12 { margin-left: -180px;}
+.pull-13 { margin-left: -195px;}
+.pull-14 { margin-left: -210px;}
+.pull-15 { margin-left: -225px;}
+.pull-16 { margin-left: -240px;}
+.pull-17 { margin-left: -255px;}
+.pull-18 { margin-left: -270px;}
+.pull-19 { margin-left: -285px;}
+.pull-20 { margin-left: -300px;}
+.pull-21 { margin-left: -315px;}
+.pull-22 { margin-left: -330px;}
+.pull-23 { margin-left: -345px;}
+.pull-24 { margin-left: -360px;}
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {float: left; position:relative;}
+
+
+.push-1 { margin: 0 -15px 1.5em 15px; }
+.push-2 { margin: 0 -30px 1.5em 30px; }
+.push-3 { margin: 0 -45px 1.5em 45px; }
+.push-4 { margin: 0 -60px 1.5em 60px; }
+.push-5 { margin: 0 -75px 1.5em 75px; }
+.push-6 { margin: 0 -90px 1.5em 90px; }
+.push-7 { margin: 0 -105px 1.5em 105px; }
+.push-8 { margin: 0 -120px 1.5em 120px; }
+.push-9 { margin: 0 -135px 1.5em 135px; }
+.push-10 { margin: 0 -150px 1.5em 150px; }
+.push-11 { margin: 0 -165px 1.5em 165px; }
+.push-12 { margin: 0 -180px 1.5em 180px; }
+.push-13 { margin: 0 -195px 1.5em 195px; }
+.push-14 { margin: 0 -210px 1.5em 210px; }
+.push-15 { margin: 0 -225px 1.5em 225px; }
+.push-16 { margin: 0 -240px 1.5em 240px; }
+.push-17 { margin: 0 -255px 1.5em 255px; }
+.push-18 { margin: 0 -270px 1.5em 270px; }
+.push-19 { margin: 0 -285px 1.5em 285px; }
+.push-20 { margin: 0 -300px 1.5em 300px; }
+.push-21 { margin: 0 -315px 1.5em 315px; }
+.push-22 { margin: 0 -330px 1.5em 330px; }
+.push-23 { margin: 0 -345px 1.5em 345px; }
+.push-24 { margin: 0 -360px 1.5em 360px; }
+
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float: left; position:relative;}
+
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+
+/* In case you need to add a gutter above/below an element */
+div.prepend-top, .prepend-top {
+  margin-top:1.5em;
+}
+div.append-bottom, .append-bottom {
+  margin-bottom:1.5em;
+}
+
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5eCf9;
+}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  color: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 17px;
+  border: none;
+}
+
+hr.space {
+  background: #fff;
+  color: #fff;
+  visibility: hidden;
+}
+
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow:hidden;
+}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear { clear:both; }
+   
+}
+
+/*######################################################################################################################################################*/
+@media (max-width: 355px) {
+	
+/* A container should group all your columns. */
+.container {
+  width:309px;
+  margin: 0,auto;
+}
+
+/* Use this class on any .span / container to see the grid. */
+.showgrid {
+  background: url(src/grid309.png);
+}
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {
+  float: left;
+  margin-right: 3px;
+}
+
+/* The last column in a row needs this class. */
+.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
+.span-1 {width: 10px;}
+
+.span-2 {width: 23px;}
+.span-3 {width: 36px;}
+.span-4 {width: 49px;}
+.span-5 {width: 62px;}
+.span-6 {width: 75px;}
+.span-7 {width: 88px;}
+.span-8 {width: 101px;}
+.span-9 {width: 114px;}
+.span-10 {width: 127px;}
+.span-11 {width: 140px;}
+.span-12 {width: 153px;}
+.span-13 {width: 166px;}
+.span-14 {width: 179px;}
+.span-15 {width: 192px;}
+.span-16 {width: 205px;}
+.span-17 {width: 218px;}
+.span-18 {width: 231px;}
+.span-19 {width: 244px;}
+.span-20 {width: 257px;}
+.span-21 {width: 270px;}
+.span-22 {width: 283px;}
+.span-23 {width: 296px;}
+.span-24 {width:309px; margin-right:0;}
+
+.vspan-1 {height: 10px;}
+.vspan-2 {height: 23px;}
+.vspan-3 {height: 36px;}
+.vspan-4 {height: 49px;}
+.vspan-5 {height: 62px;}
+.vspan-6 {height: 75px;}
+.vspan-7 {height: 88px;}
+.vspan-8 {height: 101px;}
+.vspan-9 {height: 114px;}
+.vspan-10 {height: 127px;}
+.vspan-11 {height: 140px;}
+.vspan-12 {height: 153px;}
+.vspan-13 {height: 166px;}
+.vspan-14 {height: 179px;}
+.vspan-15 {height: 192px;}
+.vspan-16 {height: 205px;}
+.vspan-17 {height: 218px;}
+.vspan-18 {height: 231px;}
+.vspan-19 {height: 244px;}
+.vspan-20 {height: 257px;}
+.vspan-21 {height: 270px;}
+.vspan-22 {height: 283px;}
+.vspan-23 {height: 296px;}
+.vspan-24 {height: 309px;}
+
+
+/* Use these classes to set the width of an input. */
+input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+
+input.span-1, textarea.span-1 { width: 10px;}
+input.span-2, textarea.span-2 { width: 23px;}
+input.span-3, textarea.span-3 { width: 36px;}
+input.span-4, textarea.span-4 { width: 49px;}
+input.span-5, textarea.span-5 { width: 62px;}
+input.span-6, textarea.span-6 { width: 75px;}
+input.span-7, textarea.span-7 { width: 88px;}
+input.span-8, textarea.span-8 { width: 101px;}
+input.span-9, textarea.span-9 { width: 114px;}
+input.span-10, textarea.span-10 { width: 127px;}
+input.span-11, textarea.span-11 { width: 140px;}
+input.span-12, textarea.span-12 { width: 153px;}
+input.span-13, textarea.span-13 { width: 166px;}
+input.span-14, textarea.span-14 { width: 179px;}
+input.span-15, textarea.span-15 { width: 192px;}
+input.span-16, textarea.span-16 { width: 205px;}
+input.span-17, textarea.span-17 { width: 218px;}
+input.span-18, textarea.span-18 { width: 231px;}
+input.span-19, textarea.span-19 { width: 244px;}
+input.span-20, textarea.span-20 { width: 257px;}
+input.span-21, textarea.span-21 { width: 270px;}
+input.span-22, textarea.span-22 { width: 283px;}
+input.span-23, textarea.span-23 { width: 296px;}
+input.span-24, textarea.span-24 { width:309px; margin-right:0;}
+
+input[type="button"].span-1 {width: 10px;}
+input[type="button"].span-2 {width: 23px;}
+input[type="button"].span-3 {width: 36px;}
+input[type="button"].span-4 {width: 49px;}
+input[type="button"].span-5 {width: 62px;}
+input[type="button"].span-6 {width: 75px;}
+input[type="button"].span-7 {width: 88px;}
+input[type="button"].span-8 {width: 101px;}
+input[type="button"].span-9 {width: 114px;}
+input[type="button"].span-10 {width: 127px;}
+input[type="button"].span-11 {width: 140px;}
+input[type="button"].span-12 {width: 153px;}
+input[type="button"].span-13 {width: 166px;}
+input[type="button"].span-14 {width: 179px;}
+input[type="button"].span-15 {width: 192px;}
+input[type="button"].span-16 {width: 205px;}
+input[type="button"].span-17 {width: 218px;}
+input[type="button"].span-18 {width: 231px;}
+input[type="button"].span-19 {width: 244px;}
+input[type="button"].span-20 {width: 257px;}
+input[type="button"].span-21 {width: 270px;}
+input[type="button"].span-22 {width: 283px;}
+input[type="button"].span-23 {width: 296px;}
+input[type="button"].span-24 {width:309px; margin-right:0;}
+
+/* Add these to a column to append empty cols. */
+
+.append-1 { padding-right: 13px;}
+.append-2 { padding-right: 26px;}
+.append-3 { padding-right: 39px;}
+.append-4 { padding-right: 52px;}
+.append-5 { padding-right: 65px;}
+.append-6 { padding-right: 78px;}
+.append-7 { padding-right: 91px;}
+.append-8 { padding-right: 104px;}
+.append-9 { padding-right: 117px;}
+.append-10 { padding-right: 130px;}
+.append-11 { padding-right: 143px;}
+.append-12 { padding-right: 156px;}
+.append-13 { padding-right: 169px;}
+.append-14 { padding-right: 182px;}
+.append-15 { padding-right: 195px;}
+.append-16 { padding-right: 208px;}
+.append-17 { padding-right: 221px;}
+.append-18 { padding-right: 234px;}
+.append-19 { padding-right: 247px;}
+.append-20 { padding-right: 260px;}
+.append-21 { padding-right: 273px;}
+.append-22 { padding-right: 286px;}
+.append-23 { padding-right: 299px;}
+
+.vappend-1 { padding-bottom: 13px;}
+.vappend-2 { padding-bottom: 26px;}
+.vappend-3 { padding-bottom: 39px;}
+.vappend-4 { padding-bottom: 52px;}
+.vappend-5 { padding-bottom: 65px;}
+.vappend-6 { padding-bottom: 78px;}
+.vappend-7 { padding-bottom: 91px;}
+.vappend-8 { padding-bottom: 104px;}
+.vappend-9 { padding-bottom: 117px;}
+.vappend-10 { padding-bottom: 130px;}
+.vappend-11 { padding-bottom: 143px;}
+.vappend-12 { padding-bottom: 156px;}
+.vappend-13 { padding-bottom: 169px;}
+.vappend-14 { padding-bottom: 182px;}
+.vappend-15 { padding-bottom: 195px;}
+.vappend-16 { padding-bottom: 208px;}
+.vappend-17 { padding-bottom: 221px;}
+.vappend-18 { padding-bottom: 234px;}
+.vappend-19 { padding-bottom: 247px;}
+.vappend-20 { padding-bottom: 260px;}
+.vappend-21 { padding-bottom: 273px;}
+.vappend-22 { padding-bottom: 286px;}
+.vappend-23 { padding-bottom: 299px;}
+.vappend-24 { padding-bottom: 312px;}
+
+/* Add these to a column to prepend empty cols. */
+
+.prepend-1 { padding-left: 13px;}
+.prepend-2 { padding-left: 26px;}
+.prepend-3 { padding-left: 39px;}
+.prepend-4 { padding-left: 52px;}
+.prepend-5 { padding-left: 65px;}
+.prepend-6 { padding-left: 78px;}
+.prepend-7 { padding-left: 91px;}
+.prepend-8 { padding-left: 104px;}
+.prepend-9 { padding-left: 117px;}
+.prepend-10 { padding-left: 130px;}
+.prepend-11 { padding-left: 143px;}
+.prepend-12 { padding-left: 156px;}
+.prepend-13 { padding-left: 169px;}
+.prepend-14 { padding-left: 182px;}
+.prepend-15 { padding-left: 195px;}
+.prepend-16 { padding-left: 208px;}
+.prepend-17 { padding-left: 221px;}
+.prepend-18 { padding-left: 234px;}
+.prepend-19 { padding-left: 247px;}
+.prepend-20 { padding-left: 260px;}
+.prepend-21 { padding-left: 273px;}
+.prepend-22 { padding-left: 286px;}
+.prepend-23 { padding-left: 299px;}
+
+.vprepend-1 { padding-top: 13px;}
+.vprepend-2 { padding-top: 26px;}
+.vprepend-3 { padding-top: 39px;}
+.vprepend-4 { padding-top: 52px;}
+.vprepend-5 { padding-top: 65px;}
+.vprepend-6 { padding-top: 78px;}
+.vprepend-7 { padding-top: 91px;}
+.vprepend-8 { padding-top: 104px;}
+.vprepend-9 { padding-top: 117px;}
+.vprepend-10 { padding-top: 130px;}
+.vprepend-11 { padding-top: 143px;}
+.vprepend-12 { padding-top: 156px;}
+.vprepend-13 { padding-top: 169px;}
+.vprepend-14 { padding-top: 182px;}
+.vprepend-15 { padding-top: 195px;}
+.vprepend-16 { padding-top: 208px;}
+.vprepend-17 { padding-top: 221px;}
+.vprepend-18 { padding-top: 234px;}
+.vprepend-19 { padding-top: 247px;}
+.vprepend-20 { padding-top: 260px;}
+.vprepend-21 { padding-top: 273px;}
+.vprepend-22 { padding-top: 286px;}
+.vprepend-23 { padding-top: 299px;}
+.vprepend-24 { padding-top: 312px;}
+
+/* Border on right hand side of a column. */
+.border {
+  padding-right: 1px;
+  margin-right: 1px;
+  border-right: 1px solid #ddd;
+}
+
+/* Border with more whitespace, spans one column. */
+.colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid #ddd;
+}
+
+
+/* Use these classes on an element to push it into the
+next column, or to pull it into the previous column.  */
+
+
+.pull-1 { margin-left: -13px;}
+.pull-2 { margin-left: -26px;}
+.pull-3 { margin-left: -39px;}
+.pull-4 { margin-left: -52px;}
+.pull-5 { margin-left: -65px;}
+.pull-6 { margin-left: -78px;}
+.pull-7 { margin-left: -91px;}
+.pull-8 { margin-left: -104px;}
+.pull-9 { margin-left: -117px;}
+.pull-10 { margin-left: -130px;}
+.pull-11 { margin-left: -143px;}
+.pull-12 { margin-left: -156px;}
+.pull-13 { margin-left: -169px;}
+.pull-14 { margin-left: -182px;}
+.pull-15 { margin-left: -195px;}
+.pull-16 { margin-left: -208px;}
+.pull-17 { margin-left: -221px;}
+.pull-18 { margin-left: -234px;}
+.pull-19 { margin-left: -247px;}
+.pull-20 { margin-left: -260px;}
+.pull-21 { margin-left: -273px;}
+.pull-22 { margin-left: -286px;}
+.pull-23 { margin-left: -299px;}
+.pull-24 { margin-left: -312px;}
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {float: left; position:relative;}
+
+
+.push-1 { margin: 0 -13px 1.5em 13px; }
+.push-2 { margin: 0 -26px 1.5em 26px; }
+.push-3 { margin: 0 -39px 1.5em 39px; }
+.push-4 { margin: 0 -52px 1.5em 52px; }
+.push-5 { margin: 0 -65px 1.5em 65px; }
+.push-6 { margin: 0 -78px 1.5em 78px; }
+.push-7 { margin: 0 -91px 1.5em 91px; }
+.push-8 { margin: 0 -104px 1.5em 104px; }
+.push-9 { margin: 0 -117px 1.5em 117px; }
+.push-10 { margin: 0 -130px 1.5em 130px; }
+.push-11 { margin: 0 -143px 1.5em 143px; }
+.push-12 { margin: 0 -156px 1.5em 156px; }
+.push-13 { margin: 0 -169px 1.5em 169px; }
+.push-14 { margin: 0 -182px 1.5em 182px; }
+.push-15 { margin: 0 -195px 1.5em 195px; }
+.push-16 { margin: 0 -208px 1.5em 208px; }
+.push-17 { margin: 0 -221px 1.5em 221px; }
+.push-18 { margin: 0 -234px 1.5em 234px; }
+.push-19 { margin: 0 -247px 1.5em 247px; }
+.push-20 { margin: 0 -260px 1.5em 260px; }
+.push-21 { margin: 0 -273px 1.5em 273px; }
+.push-22 { margin: 0 -286px 1.5em 286px; }
+.push-23 { margin: 0 -299px 1.5em 299px; }
+.push-24 { margin: 0 -312px 1.5em 312px; }
+
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float: left; position:relative;}
+
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+
+/* In case you need to add a gutter above/below an element */
+div.prepend-top, .prepend-top {
+  margin-top:1.5em;
+}
+div.append-bottom, .append-bottom {
+  margin-bottom:1.5em;
+}
+
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5eCf9;
+}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  color: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 17px;
+  border: none;
+}
+
+hr.space {
+  background: #fff;
+  color: #fff;
+  visibility: hidden;
+}
+
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow:hidden;
+}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear { clear:both; }
+   
+}

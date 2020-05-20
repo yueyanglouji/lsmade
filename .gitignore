@@ -1,0 +1,16 @@
+/build
+/repos
+/.gradle
+/.svn
+/.settings
+/bin
+/logs
+/cookies.sqlite
+/lock.lck
+/.classpath
+/.project
+/runing.lck
+/log
+*/.DS_Store
+.DS_Store
+/.idea

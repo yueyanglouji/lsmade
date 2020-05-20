@@ -1,0 +1,42 @@
+.zoominner { background: none repeat scroll 0 0 #FFFFFF; padding: 5px 10px 10px; text-align: left; }
+.zoominner p { padding: 0 0 8px 0; margin: 0; }
+.y { float: right; }
+.zoominner p a {
+    background: url("src/imgzoom_tb.gif") no-repeat scroll 0 0 #FFFFFF;
+    float: left;
+    height: 25px;
+    line-height: 100px;
+    margin-left: 10px;
+    overflow: hidden;
+    width: 25px;
+}
+
+.y a:link, .y a:visited { color: #656D78; text-decoration: none; }
+.y a { outline: medium none; }
+
+.zoominner p a.imgadjust { background-position: -35px 5px; }
+
+.zoominner p a.imgclose { background-position: -75px 5px; }
+
+.zimg_p strong { display: none; }
+
+#imgzoom_exif {
+	background-color: white;
+	margin: 5px -10px;
+	-webkit-box-sizing: content-box !important;
+	-moz-box-sizing: content-box !important;
+	box-sizing: content-box !important
+}
+
+#lszoom_left {
+	width:30px;
+	background-color:white;
+	position:fixed;top:0;
+	left:0px;
+	bottom: 0px;
+	padding:12px 10px;
+	z-index: 1000;
+}
+#lszoom_left zoonIn {
+	
+}
