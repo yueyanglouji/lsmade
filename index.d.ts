@@ -3,9 +3,7 @@ import './src/v4.0/styles/dist/theme-pc.min.css'
 import './src/v4.0/styles/cssframework/ls/vue/dateFormat'
 import './src/v4.0/styles/cssframework/ls/vue/download'
 import './src/v4.0/styles/cssframework/ls/vue/extends'
-//import './src/v4.0/styles/cssframework/ls/vue/buttons'
-
-import {ElInfiniteScroll} from "element-ui/types/infinite-scroll";
+export * from './src/v4.0/styles/cssframework/ls/vue/buttons'
 
 interface Lsmade{
     install(vue: typeof Vue): void
