@@ -2,7 +2,7 @@
 </template>
 <script>
     export default {
-        name: "LsTile",
+        name: "LsTitle",
         props: [ 'value', 'saveToStore' ],
         methods:{
             clickFunc(func, data){
