@@ -4,6 +4,7 @@ import './src/v4.0/styles/cssframework/ls/vue/dateFormat'
 import './src/v4.0/styles/cssframework/ls/vue/download'
 import './src/v4.0/styles/cssframework/ls/vue/extends'
 export * from './src/v4.0/styles/cssframework/ls/vue/buttons'
+export * from './src/v4.0/styles/cssframework/ls/vue/title'
 
 interface Lsmade{
     install(vue: typeof Vue): void
