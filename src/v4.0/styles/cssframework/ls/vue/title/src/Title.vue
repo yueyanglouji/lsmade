@@ -10,9 +10,7 @@
                     return func(data, this.$parent);
                 }
             },
-        },
-        mounted: function () {
-            this.$nextTick(function () {
+            setTitle(){
                 if(this.$props['saveToStore']){
                     if(!this.$store.state.lsMade){
                         this.$store.state.lsMade = {}
@@ -20,6 +18,18 @@
                     this.$store.state.lsMade.title = this.$props.value
                 }
                 window.document.title = this.$props.value
+            }
+        },
+        watch: {
+            value: {
+                handler(val) {
+                    this.setTitle();
+                }
+            }
+        },
+        mounted: function () {
+            this.$nextTick(function () {
+                this.setTitle();
             })
         },
     }
